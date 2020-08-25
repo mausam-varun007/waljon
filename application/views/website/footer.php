@@ -227,12 +227,4 @@
             </div>
          </footer>
       </main>
-      <div class="back-top"><a href= "#" class="back-top-button"></a></div>
-      <script type="text/javascript" src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/themes/theme_ecolife_cosmetic3/assets/cache/bottom-16c3cf16.js" ></script>
-      <div id="poscompare-notification" class="">
-         <div class="notification-inner">
-            <span class="notification-title"><i class="fa fa-check" aria-hidden="true"></i>  Product added to compare.</span>
-         </div>
-      </div>
-   </body>
-</html>
+      
