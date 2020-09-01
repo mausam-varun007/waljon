@@ -32,6 +32,11 @@ class Home extends CI_Controller {
     			$this->load->view('website/header');
 					$this->load->view('website/signup');
 					$this->load->view('website/footer');
+          break; 
+    case 'product-view': 
+    			$this->load->view('website/header');
+					$this->load->view('website/product-view');
+					$this->load->view('website/footer');
           break;          
             
     }  
@@ -97,5 +102,33 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('website/Contact');
 	}
+	public function headerMenuList()
+	{
+		//$parent_category = $this->Home->getData('parent_category','*',array('is_active'=>1));
+		$this->db->select('*');
+		$this->db->from('parent_category');
+		$this->db->where('is_active',1);
+		$this->db->limit(9);
+		$parent_category = $this->db->get()->result();
+		if (!empty($parent_category)) {
+			foreach ($parent_category as $key => $value) {
+				$data[$key] = (array) $value;
+				$category = $this->Home->getData('category','category,id',array('parent_category_id'=>$value->id,'is_active'=>1));
+				if (!empty($category)) {
+					foreach ($category as $key1 => $value1) {
+						$data[$key]['category'][$key1] = (array) $value1;
+						$subcategory = $this->Home->getData('subcategory','subcategory,id',array('category_id'=>$value1->id,'is_active'=>1));
+						$data[$key]['category'][$key1]['subcategory'] = $subcategory;
+					}
+					
+				}
+			}
+			/*echo "<pre>";
+			print_r($data);
+			exit();*/
+			echo json_encode(array('status'=>1,'data'=>$data));
+		}
+	}
+	
 		
 }

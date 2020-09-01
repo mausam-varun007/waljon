@@ -56,3 +56,4 @@ $route['home'] = 'home';
 $route['view/(:any)'] = 'home/view/$1';
 $route['UserSignUp'] = 'home/UserSignUp';
 $route['UserLogIn'] = 'home/UserLogIn';
+$route['home/headerMenuList'] = 'home/headerMenuList';

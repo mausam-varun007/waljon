@@ -117,113 +117,53 @@
                            <div id="_desktop_megamenu" class="use-sticky megamenu_center">
                               <div class="pos-menu-horizontal">
                                  <ul class="menu-content">
-                                    <li class="home menu-item menu-item1   ">
-                                       <a href="" >
+                                    <li class=" menu-item menu-item6   ">
+                                       <a href="<?php echo base_url('home/Contact'); ?>" >
                                        <span>Home</span>
                                        </a>
                                     </li>
                                     <li class=" menu-item menu-item3  hasChild ">
                                        <a href="<?php echo base_url('home/filter'); ?>" >
-                                       <span> Category</span>
+                                       <span> Category </span>
                                        <i class="fa fa-caret-down"></i></a>
-                                       <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>                  
-                                       <div class="pos-sub-menu menu-dropdown col-xs-12 col-sm-12  menu_slidedown">
+                                       <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>
+                                       <div class="pos-sub-menu menu-dropdown col-xs-12 col-sm-12  menu_slidedown" style="width: 100%">
                                           <div class="pos-sub-inner">
                                              <div class="pos-menu-row row ">
-                                                <div class="pos-menu-col col-xs-6 col-sm-3  ">
+                                                <div class="pos-menu-col col-xs-2 col-sm-2 " data-ng-repeat="parentitem in headerMenuList">
                                                    <ul class="ul-column ">
-                                                      <li class="submenu-item ">
-                                                         <a href="<?php echo base_url('home/filter'); ?>">Makeup</a>
-                                                         <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>                                                                                           
-                                                         <ul class="category-sub-menu">
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Eyes</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>s">Lips</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Face</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Makeup Tools</a>
-                                                            </li>
-                                                         </ul>
-                                                      </li>
-                                                   </ul>
-                                                </div>
-                                                <div class="pos-menu-col col-xs-6 col-sm-3  ">
-                                                   <ul class="ul-column ">
-                                                      <li class="submenu-item ">
-                                                         <a href="<?php echo base_url('home/filter'); ?>">Skin Care</a>
-                                                         <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>                                                                                           
-                                                         <ul class="category-sub-menu">
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Face</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Eyes</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Body</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Skin Care Tools</a>
-                                                            </li>
-                                                         </ul>
-                                                      </li>
-                                                   </ul>
-                                                </div>
-                                                <div class="pos-menu-col col-xs-6 col-sm-3  ">
-                                                   <ul class="ul-column ">
-                                                      <li class="submenu-item ">
-                                                         <a href="<?php echo base_url('home/filter'); ?>">Health Care</a>
-                                                         <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>                                                                                           
-                                                         <ul class="category-sub-menu">
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Massage &amp; Relaxation</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Household Health Monitors</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Chinese Medicine</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Personal Health Care Items</a>
-                                                            </li>
-                                                         </ul>
-                                                      </li>
-                                                   </ul>
-                                                </div>
-                                                <div class="pos-menu-col col-xs-6 col-sm-3  ">
-                                                   <ul class="ul-column ">
-                                                      <li class="submenu-item ">
-                                                         <a href="<?php echo base_url('home/filter'); ?>">Nail Art &amp; Tools</a>
-                                                         <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>                                                                                           
-                                                         <ul class="category-sub-menu">
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Gel Nail Polish</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Nail Drills</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Nail Dryers</a>
-                                                            </li>
-                                                            <li>
-                                                               <a href="<?php echo base_url('home/filter'); ?>">Nail Glitter</a>
-                                                            </li>
-                                                         </ul>
-                                                      </li>
-                                                   </ul>
-                                                </div>
-                                             </div>
-                                             <div class="pos-menu-row row ">
-                                                <div class="pos-menu-col col-xs-12 col-sm-12  ">
-                                                   <ul class="ul-column ">
-                                                      <li class="submenu-item ">
-                                                         <a href="<?php echo base_url('home/filter'); ?>"><img src="/pos_ecolife_cosmetic/cosmetic3/img/cms/banner-menu.jpg" alt="" /></a>
+                                                      <li class=" menu-item menu-item3  hasChild hasSubChild ">
+                                                         <a href="<?php echo base_url('home/filter'); ?>" >
+                                                         <span> {{parentitem.parent_category}} </span></a>
+                                                         <div class="pos-sub-menu menu-dropdown col-xs-12 col-sm-12  menu_slidedown">
+                                                            <div class="pos-sub-inner">
+                                                               <div class="pos-menu-row row ">
+                                                                  <div class="pos-menu-col col-xs-6 col-sm-3 " data-ng-repeat="category in parentitem.category">
+                                                                     <ul class="ul-column ">
+                                                                        <li class="submenu-item ">
+                                                                           <a href="<?php echo base_url('home/filter'); ?>">{{category.category}}</a>
+                                                                           <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>                                                                                           
+                                                                           <ul class="category-sub-menu" >
+                                                                              <li data-ng-repeat="subcategory in category.subcategory">
+                                                                                 <a href="<?php echo base_url('home/filter'); ?>">{{subcategory.subcategory}}</a>
+                                                                              </li>
+                                                                           </ul>
+                                                                        </li>
+                                                                     </ul>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="pos-menu-row row ">
+                                                                  <div class="pos-menu-col col-xs-12 col-sm-12  ">
+                                                                     <ul class="ul-column ">
+                                                                        <li class="submenu-item ">
+                                                                           <a href="<?php echo base_url('home/filter'); ?>"><img src="/pos_ecolife_cosmetic/cosmetic3/img/cms/banner-menu.jpg" alt="" /></a>
+                                                                        </li>
+                                                                     </ul>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+
                                                       </li>
                                                    </ul>
                                                 </div>
@@ -231,6 +171,7 @@
                                           </div>
                                        </div>
                                     </li>
+                                    
                                     <!-- <li class=" menu-item menu-item4  hasChild ">
                                        <a href="<?php echo base_url('home/filter'); ?>" >
                                        <span>Health Care</span>

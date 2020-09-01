@@ -47,6 +47,8 @@ app.config(function (toastrConfig) {
 
 app.service('homeService', function ($http,$q,$rootScope) {
     var getCategoryList    = undefined;
+    var getCHeaderList    = undefined;
+    
      
     this.getCategoryList = function() {
   
@@ -66,6 +68,25 @@ app.service('homeService', function ($http,$q,$rootScope) {
         getCategoryList = deferred.promise;
       }
       return $q.when(getCategoryList);
+    }
+
+    this.getHeaderList = function() {
+  
+       if (!getCHeaderList) {         
+        var deferred = $q.defer(); 
+        // get skills list form backend
+        $http.post(Base_url+'home/headerMenuList')
+          .then(function(result) {            
+            getCHeaderList = result.data.data;            
+            deferred.resolve(getCHeaderList);
+          }, function(error) {
+            getCHeaderList = error;
+            deferred.reject(error);
+          }); 
+        
+        getCHeaderList = deferred.promise;
+      }
+      return $q.when(getCHeaderList);
     }
 });
 
@@ -89,6 +110,11 @@ app.config(function($stateProvider, $locationProvider,
             url : '/signup', 
             templateUrl : Base_url+'view/signup',  
             controller : "SignupCtrl"
+        })
+        .state('ProductView', { 
+            url : '/product-view', 
+            templateUrl : Base_url+'view/product-view',  
+            controller : "ProdcutViewCtrl"
         });
   
     // Redirect to home page if url does not  
@@ -98,7 +124,7 @@ app.config(function($stateProvider, $locationProvider,
 
 app.controller('MainCtrl', function() {}); 
 app.controller('HomeCtrl', function($scope,homeService) {
-
+   
     $scope.items1 = [1,2,3,4,5];
     $scope.items2 = [1,2,3,4,5,6,7,8,9,10];
     $scope.slides = [
@@ -116,10 +142,10 @@ app.controller('HomeCtrl', function($scope,homeService) {
     }
   ];
   $scope.myInterval = 3000;
-    $scope.newTest = 'hi';
-   /* homeService.getCategoryList().then(function(response){
-         $scope.category = angular.copy(response); 
-    })*/
+   // $scope.newTest = 'hi';
+    homeService.getHeaderList().then(function(response){
+         $scope.headerMenuList = angular.copy(response); 
+    })
 
 
 });
@@ -143,6 +169,23 @@ app.controller('LoginCtrl', function($scope,toastr,$http,$state,storageService) 
     };
 });
 app.controller('SignupCtrl', function($scope,toastr,$http,$state) {
+    $scope.submitForm = function (isValid) {
+        if (isValid) {
+            $scope.isLoadding = true;
+            $http.post(Base_url + 'UserSignUp',$scope.userData)
+                .then(function (response) {
+                    if (response.data.status) {
+                        toastr.success(response.data.msg);
+                        $state.go('Login');
+                    }
+                    else{
+                        toastr.error(response.data.msg);
+                    }
+                });
+        }
+    };
+});
+app.controller('ProdcutViewCtrl', function($scope,toastr,$http,$state) {
     $scope.submitForm = function (isValid) {
         if (isValid) {
             $scope.isLoadding = true;
