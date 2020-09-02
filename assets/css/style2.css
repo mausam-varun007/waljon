@@ -60,8 +60,15 @@ img{max-width:100%}.unvisible,.headerSpace{display:block}.pos-menu-horizontal .i
     position: initial;
 }
 .pos-sub-menu.menu-dropdown.col-xs-12.col-sm-12.menu_slidedown.inner-menu {
-    left: 9% !important;
+    left: 0 !important;
 }
 .pos-sub-menu.menu-dropdown.col-xs-12.col-sm-12.menu_slidedown.inner-menu .pos-sub-inner{
 	padding: 20px !important;
+}
+.pos-menu-col.sub-category {
+    padding: 0px 30px;
+}
+.pos-sub-menu.menu-dropdown.col-xs-12.col-sm-12.menu_slidedown {
+    width: 1140px !important;
+    margin: 0 auto;
 }

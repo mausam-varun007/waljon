@@ -130,7 +130,7 @@
                                        <div class="pos-sub-menu menu-dropdown col-xs-12 col-sm-12  menu_slidedown" style="width: 100%">
                                           <div class="pos-sub-inner">
                                              <div class="pos-menu-row row ">
-                                                <div class="pos-menu-col col-xs-2 col-sm-2 " data-ng-repeat="parentitem in headerMenuList">
+                                                <div class="pos-menu-col sub-category" data-ng-repeat="parentitem in headerMenuList">
                                                    <ul class="ul-column ">
                                                       <li class=" menu-item menu-item3  hasChild hasSubChild ">
                                                          <a href="<?php echo base_url('home/filter'); ?>" >
