@@ -18,12 +18,18 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.js"></script>
+      <script src="<?php echo base_url('assets/js/easyzoom.js');?>"></script>
+
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" type="text/css" media="all">
+
       <link rel="stylesheet" href="<?php echo base_url('assets/css/style2.css');?>" type="text/css" media="all">
       <link rel="stylesheet" href="<?php echo base_url()?>assets/css/angular-toastr.css" />
       <script type="text/javascript">
         var Base_url = "<?=base_url()?>index.php/";   
      </script>
+
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>      
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.min.js"></script>
      <script src="<?=base_url()?>assets/js/angular-toastr.tpls.js"></script>
