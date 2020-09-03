@@ -129,6 +129,64 @@ class Home extends CI_Controller {
 			echo json_encode(array('status'=>1,'data'=>$data));
 		}
 	}
+	public function test()
+	{
+		if ($this->input->server('REQUEST_METHOD') == 'POST') {
+			
+			 $config['upload_path'] = 'assets/img/';
+		        $config['allowed_types'] = 'gif|jpg|png';
+		        $config['encrypt_name'] = TRUE;
+  				$this->upload->initialize($config);
+
+			if ($_FILES['product_image']['name']) {
+				if (!$this->upload->do_upload('product_image')) {
+		            $error = array('error' => $this->upload->display_errors());
+		        } else {
+		        	$uploadData = $this->upload->data();
+		            $data = array('product_image' => $this->upload->data());
+		            $product_image = $uploadData['file_name'];
+		        }
+			}
+			if ($_FILES['gallery1']['name']) {
+				if (!$this->upload->do_upload('gallery1')) {
+		            $error = array('error' => $this->upload->display_errors());
+		        } else {
+		        	$uploadData = $this->upload->data();
+		            $data = array('gallery1' => $this->upload->data());
+		            $gallery1 = $uploadData['file_name'];
+		        }
+			}
+			if ($_FILES['gallery2']['name']) {
+				if (!$this->upload->do_upload('gallery2')) {
+		            $error = array('error' => $this->upload->display_errors());
+		        } else {
+		        	$uploadData = $this->upload->data();
+		            $data = array('gallery2' => $this->upload->data());
+		            $gallery2 = $uploadData['file_name'];
+		        }
+			}
+			if ($_FILES['gallery3']['name']) {
+				if (!$this->upload->do_upload('gallery3')) {
+		            $error = array('error' => $this->upload->display_errors());
+		        } else {
+		        	$uploadData = $this->upload->data();
+		            $data = array('gallery3' => $this->upload->data());
+		            $gallery3 = $uploadData['file_name'];
+		        }
+			}
+			
+			$data = array('subcategory_id'=>$_REQUEST['subcategory_id'],
+						'name'=>$_REQUEST['name'],
+						'description'=>$_REQUEST['description'],
+						'price'=>$_REQUEST['price'],
+						'product_image'=>$product_image,
+						'gallery1'=>$gallery1,
+						'gallery2'=>$gallery2,
+						'gallery3'=>$gallery3);
+			$this->db->insert('product',$data);
+		}
+		$this->load->view('test');
+	}
 	
 		
 }
