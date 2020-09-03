@@ -135,7 +135,7 @@
                                                       <li class=" menu-item menu-item3  hasChild hasSubChild ">
                                                          <a href="<?php echo base_url('home/filter'); ?>" >
                                                          <span> {{parentitem.parent_category}} </span></a>
-                                                         <div class="pos-sub-menu menu-dropdown col-xs-12 col-sm-12  menu_slidedown inner-menu">
+                                                         <div class="pos-sub-menu menu-dropdown col-xs-12 col-sm-12  menu_slidedown inner-menu" ng-if="parentitem.category.length > 2">
                                                             <div class="pos-sub-inner">
                                                                <div class="pos-menu-row row ">
                                                                   <div class="pos-menu-col col-xs-6 col-sm-3 " data-ng-repeat="category in parentitem.category">
@@ -163,7 +163,19 @@
                                                                </div>
                                                             </div>
                                                          </div>
-
+                                                         
+                                                         <div class="menu-dropdown cat-drop-menu menu_slidedown" ng-if="parentitem.category.length < 2">
+                                                            <div data-ng-repeat="category in parentitem.category">   
+                                                               <ul class="pos-sub-inner">
+                                                                  <li>
+                                                                     <a href="<?php echo base_url('home/filter'); ?>" class="fw-600">{{category.category}}</a>
+                                                                  </li>
+                                                                  <li data-ng-repeat="subcategory in category.subcategory">
+                                                                     <a href="<?php echo base_url('home/filter'); ?>">{{subcategory.subcategory}}</a>
+                                                                  </li>
+                                                               </ul>
+                                                            </div>
+                                                         </div>                                   
                                                       </li>
                                                    </ul>
                                                 </div>

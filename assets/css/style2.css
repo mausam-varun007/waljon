@@ -72,3 +72,10 @@ img{max-width:100%}.unvisible,.headerSpace{display:block}.pos-menu-horizontal .i
     width: 1140px !important;
     margin: 0 auto;
 }
+#_desktop_megamenu .pos-menu-horizontal .menu-content .menu-item .menu-dropdown.cat-drop-menu li a.fw-600 {
+    font-weight: 700 !important;
+    color: #253237;
+}
+#_desktop_megamenu .pos-menu-horizontal .menu-content .menu-item .menu-dropdown.cat-drop-menu li a.fw-600:hover {
+    color: #c0b07d;
+}
