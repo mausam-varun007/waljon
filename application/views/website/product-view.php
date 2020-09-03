@@ -1113,3 +1113,89 @@
             </div>
          </div>
         
+         <script type="text/javascript">
+            $(document).ready(function() {
+            $('.images-container .slider-for').slick({
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               focusOnSelect: true,
+               arrows: true, 
+               fade: true,
+               infinite: true,
+               lazyLoad: 'ondemand',
+               asNavFor: '.slider-nav'
+             });
+              if (0 == 0) {
+                $('.images-container .slider-nav').slick({
+                  slidesToShow: 4,
+                  slidesToScroll: 1,
+                  asNavFor: '.slider-for',
+                  dots: false, 
+                  arrows: true, 
+                  infinite: true,
+                  focusOnSelect: true
+                });
+             }else {
+             $('.images-container .slider-nav').slick({
+               slidesToShow: 4,
+               slidesToScroll: 1,
+               asNavFor: '.slider-for',
+               vertical:true,
+               dots: false, 
+               arrows: true, 
+               infinite: true,
+               focusOnSelect: true,
+               responsive: [
+                  {
+                 breakpoint: 991,
+                 settings: {
+                  slidesToShow: 2, 
+                  slidesToScroll: 1,
+                 }
+               },
+               {
+                 breakpoint: 767,
+                 settings: {
+                  slidesToShow: 4, 
+                  slidesToScroll: 1,
+                 }
+               },
+               {
+                 breakpoint: 543,
+                 settings: {
+                  slidesToShow: 3, 
+                  slidesToScroll: 1,
+                 }
+               },
+               {
+                 breakpoint: 399,
+                 settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1, 
+                 }
+               }
+               ]
+             });
+             }
+             
+             $('.images-container .slider-for').slickLightbox({
+                  src: 'src',
+                  itemSelector: '.thumb-item img'
+             });
+               if($(window).width() >= 992) 
+               {
+                  var $easyzoom = $('.images-container .easyzoom').easyZoom(); 
+               }
+            $(window).resize(function(){
+               if($(window).width() >= 992)
+               {
+                   var $easyzoom = $('.images-container .easyzoom').easyZoom();  
+                  $('.easyzoom--overlay').addClass('easyzoom');
+               }
+               else
+               {
+                  $('.easyzoom--overlay').removeClass('easyzoom');   
+               }
+            });
+            });
+         </script> 
