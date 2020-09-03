@@ -123,7 +123,7 @@
                                        </a>
                                     </li>
                                     <li class=" menu-item menu-item3  hasChild ">
-                                       <a href="<?php echo base_url('home/filter'); ?>" >
+                                       <a class="tt-upercase" href="<?php echo base_url('home/filter'); ?>" >
                                        <span> Category </span>
                                        <i class="fa fa-caret-down"></i></a>
                                        <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>
@@ -132,7 +132,7 @@
                                              <div class="pos-menu-row row ">
                                                 <div class="pos-menu-col sub-category" data-ng-repeat="parentitem in headerMenuList">
                                                    <ul class="ul-column ">
-                                                      <li class=" menu-item menu-item3  hasChild hasSubChild ">
+                                                      <li class=" menu-item menu-item3  hasChild hasSubChild">
                                                          <a href="<?php echo base_url('home/filter'); ?>" >
                                                          <span> {{parentitem.parent_category}} </span></a>
                                                          <div class="pos-sub-menu menu-dropdown col-xs-12 col-sm-12  menu_slidedown inner-menu" ng-if="parentitem.category.length > 2">
