@@ -191,6 +191,11 @@ app.controller('SignupCtrl', function($scope,toastr,$http,$state) {
     };
 });
 app.controller('ProdcutViewCtrl', function($scope,toastr,$http,$state) {
+
+    $scope.product_id = 4;
+    $scope.singleProductDetails = [];
+    $scope.relatedProductDetails = [];
+
     $scope.submitForm = function (isValid) {
         if (isValid) {
             $scope.isLoadding = true;
@@ -206,6 +211,32 @@ app.controller('ProdcutViewCtrl', function($scope,toastr,$http,$state) {
                 });
         }
     };
+
+    $scope.getSingleProductDetails = function() {
+        if ($scope.product_id != null && $scope.product_id != '' && $scope.product_id != undefined) {
+            $http.post(Base_url + 'getSingleProductDetails', { product_id: $scope.product_id}).then(function(response) {
+                if (response.data.status) {
+                    $scope.singleProductDetails = angular.copy(response.data.data);
+                }
+            });
+        } else {
+            toastr.error('Product not found');
+        }
+    }
+    $scope.getSingleProductDetails();
+
+    $scope.getRelatedProductDetails = function() {
+        if ($scope.product_id != null && $scope.product_id != '' && $scope.product_id != undefined) {
+            $http.post(Base_url + 'getRelatedProductDetails', { product_id: $scope.product_id}).then(function(response) {
+                if (response.data.status) {
+                    $scope.relatedProductDetails = angular.copy(response.data.data);
+                }
+            });
+        } else {
+            toastr.error('Product not found');
+        }
+    }
+    $scope.getRelatedProductDetails();
 });
 app.controller('AllProdcutCtrl', function($scope,toastr,$http,$state) {
   $scope.pagination = [];

@@ -197,6 +197,11 @@ class Home extends CI_Controller {
 	{
 		echo $this->Home->getAllProduct();
 	}
-	
+	public function getSingleProductDetails(){
+      	echo $this->Home->getSingleProductDetails();     
+    }
+    public function getRelatedProductDetails(){
+      	echo $this->Home->getRelatedProductDetails();     
+    }
 		
 }
