@@ -241,7 +241,7 @@ app.controller('ProdcutViewCtrl', function($scope,toastr,$http,$state) {
 app.controller('AllProdcutCtrl', function($scope,toastr,$http,$state) {
   $scope.pagination = [];
   $scope.pagination.pageIndex = 1;
-  $scope.pagination.pageSizeSelected = 2;
+  $scope.pagination.pageSizeSelected = 10;
     $scope.getAllProduct = function () {
         $scope.isLoadding = true;
         $http.post(Base_url + 'getAllProduct',{
