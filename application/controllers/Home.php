@@ -187,6 +187,12 @@ class Home extends CI_Controller {
 		}
 		$this->load->view('test');
 	}
-	
+	public function getSingleProductDetails(){
+      	echo $this->Home->getSingleProductDetails();     
+    }
+    public function getRelatedProductDetails(){
+      	echo $this->Home->getRelatedProductDetails();     
+    }
+    
 		
 }

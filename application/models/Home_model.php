@@ -75,5 +75,45 @@ class Home_model extends MY_Model {
 		return $query->result();
 	}
 
+	public function getSingleProductDetails(){
+
+		if(!empty($this->input->post('product_id')))
+		{
+			$query = $this->db->select('*')->from('product')->where('id',$this->input->post('product_id'))->get();
+			if($query->num_rows() > 0)
+			{
+		        $data = $query->row();
+				return  json_encode(array('status'=>1,'message'=>'success','data'=>$data));
+			}else{
+				return  json_encode(array('status'=>0,'message'=>'No record Found'));
+			}
+		}else{
+			return  json_encode(array('status'=>0,'message'=>'Missing Parameter'));
+		}
+	}
 	
+	public function getRelatedProductDetails(){
+
+		if(!empty($this->input->post('product_id')))
+		{
+			$getSubCategoryId = $this->db->select('subcategory_id')->from('product')->where('id',$this->input->post('product_id'))->get();
+			if($getSubCategoryId->num_rows() > 0)
+			{
+		        $subCategoryId = $getSubCategoryId->row()->subcategory_id;
+		
+		        if(!empty($subCategoryId)){
+		        	$getProduct = $this->db->select('*')->from('product')->where('subcategory_id',$subCategoryId)->where('id !=',$this->input->post('product_id'))->get();
+		        	if($getProduct->num_rows() > 0)
+					{
+						$data = $getProduct->result();
+						return  json_encode(array('status'=>1,'message'=>'success','data'=>$data));
+					}	
+		        }
+			}else{
+				return  json_encode(array('status'=>0,'message'=>'No record Found'));
+			}
+		}else{
+			return  json_encode(array('status'=>0,'message'=>'Missing Parameter'));
+		}
+	}
 }

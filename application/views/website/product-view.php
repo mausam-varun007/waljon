@@ -21,7 +21,7 @@
                      </li>
                      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <a itemprop="item" href="#">
-                        <span itemprop="name">Water and Wind Resistant Insulated Jacket</span>
+                        <span itemprop="name">{{singleProductDetails.name}}</span>
                         </a>
                         <meta itemprop="position" content="3">
                      </li>
@@ -46,29 +46,29 @@
                                        <div class="product-cover slider-for">
                                           <div class="thumb-item">
                                              <div class="easyzoom easyzoom--overlay">
-                                                <a href="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/132-large_default/-water-and-wind-resistant-insulated-jacket.jpg">
-                                                <img class=""  style="width:100%;" src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/132-large_default/-water-and-wind-resistant-insulated-jacket.jpg" alt="" title="" itemprop="image">
+                                                <a href="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.product_image}}">
+                                                <img class=""  style="width:100%;" src="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.product_image}}" alt="" title="" itemprop="image">
                                                 </a>
                                              </div>
                                           </div>
                                           <div class="thumb-item">
                                              <div class="easyzoom easyzoom--overlay">
-                                                <a href="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/133-large_default/-water-and-wind-resistant-insulated-jacket.jpg">
-                                                <img class=""  style="width:100%;" src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/133-large_default/-water-and-wind-resistant-insulated-jacket.jpg" alt="" title="" itemprop="image">
+                                                <a href="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.gallery1}}">
+                                                <img class=""  style="width:100%;" src="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.gallery1}}" alt="" title="" itemprop="image">
                                                 </a>
                                              </div>
                                           </div>
                                           <div class="thumb-item">
                                              <div class="easyzoom easyzoom--overlay">
-                                                <a href="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/134-large_default/-water-and-wind-resistant-insulated-jacket.jpg">
-                                                <img class=""  style="width:100%;" src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/134-large_default/-water-and-wind-resistant-insulated-jacket.jpg" alt="" title="" itemprop="image">
+                                                <a href="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.gallery2}}">
+                                                <img class=""  style="width:100%;" src="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.gallery2}}" alt="" title="" itemprop="image">
                                                 </a>
                                              </div>
                                           </div>
                                           <div class="thumb-item">
                                              <div class="easyzoom easyzoom--overlay">
-                                                <a href="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/135-large_default/-water-and-wind-resistant-insulated-jacket.jpg">
-                                                <img class=""  style="width:100%;" src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/135-large_default/-water-and-wind-resistant-insulated-jacket.jpg" alt="" title="" itemprop="image">
+                                                <a href="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.gallery3}}">
+                                                <img class=""  style="width:100%;" src="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.gallery3}}" alt="" title="" itemprop="image">
                                                 </a>
                                              </div>
                                           </div>
@@ -79,7 +79,7 @@
                                           <div>
                                              <img
                                                 class="thumb js-thumb  selected "
-                                                src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/132-home_default/-water-and-wind-resistant-insulated-jacket.jpg"
+                                                src="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.product_image}}"
                                                 alt=""
                                                 title=""
                                                 width="100"
@@ -91,7 +91,7 @@
                                           <div>
                                              <img
                                                 class="thumb js-thumb "
-                                                src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/133-home_default/-water-and-wind-resistant-insulated-jacket.jpg"
+                                                src="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.gallery1}}"
                                                 alt=""
                                                 title=""
                                                 width="100"
@@ -103,7 +103,7 @@
                                           <div>
                                              <img
                                                 class="thumb js-thumb "
-                                                src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/134-home_default/-water-and-wind-resistant-insulated-jacket.jpg"
+                                                src="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.gallery2}}"
                                                 alt=""
                                                 title=""
                                                 width="100"
@@ -115,7 +115,7 @@
                                           <div>
                                              <img
                                                 class="thumb js-thumb "
-                                                src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/135-home_default/-water-and-wind-resistant-insulated-jacket.jpg"
+                                                src="<?php echo base_url('assets/img/'); ?>{{singleProductDetails.gallery3}}"
                                                 alt=""
                                                 title=""
                                                 width="100"
@@ -130,7 +130,7 @@
                            </div>
                            <div class="col-md-6 ">
                               <div class="content_info">
-                                 <h1 class="h1 namne_details" itemprop="name">Water and Wind Resistant Insulated Jacket</h1>
+                                 <h1 class="h1 namne_details" itemprop="name">{{singleProductDetails.name}}</h1>
                                  <p class="reference">Reference:<span> demo_13</span></p>
                                  <div id="product_comments_block_extra" class="no-print" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                                     <div class="comments_note clearfix">
@@ -171,7 +171,7 @@
                                        <link itemprop="availability" href="https://schema.org/InStock"/>
                                        <meta itemprop="priceCurrency" content="USD">
                                        <div class="current-price">
-                                          <span itemprop="price" content="11.9">₹11.90</span>
+                                          <span itemprop="price" content="11.9">₹{{singleProductDetails.price}}</span>
                                        </div>
                                     </div>
                                     <div class="tax-shipping-delivery-label">
@@ -179,20 +179,7 @@
                                  </div>
                                  <div class="product-information">
                                     <div id="product-description-short-8" class="product-description-short" itemprop="description">
-                                       <ul>
-                                          <li>
-                                             <div>Stay ready for a change in weather with the IZOD® Water and Wind Resistant Insulated Jacket.</div>
-                                          </li>
-                                          <li>
-                                             <div>Water-resistant jacket keeps you warm and dry.</div>
-                                          </li>
-                                          <li>
-                                             <div>Stand collar features an attached hood.</div>
-                                          </li>
-                                          <li>
-                                             <div>Front-zip closure.</div>
-                                          </li>
-                                       </ul>
+                                       <p>{{singleProductDetails.description}}</p>
                                     </div>
                                     <div class="product-actions">
                                        <form action="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/en/cart" method="post" id="add-to-cart-or-refresh">
@@ -287,44 +274,7 @@
                                  <div class="tab-content" id="tab-content">
                                     <div class="tab-pane fade in active" id="description" role="tabpanel">
                                        <div class="product-description">
-                                          <ul>
-                                             <li>
-                                                <div>Stay ready for a change in weather with the IZOD® Water and Wind Resistant Insulated Jacket.</div>
-                                             </li>
-                                             <li>
-                                                <div>Water-resistant jacket keeps you warm and dry.</div>
-                                             </li>
-                                             <li>
-                                                <div>Stand collar features an attached hood.</div>
-                                             </li>
-                                             <li>
-                                                <div>Front-zip closure.</div>
-                                             </li>
-                                             <li>
-                                                <div>Long sleeves with elastic cuffs.</div>
-                                             </li>
-                                             <li>
-                                                <div>Vertical-zip chest pocket at the left.</div>
-                                             </li>
-                                             <li>
-                                                <div>Zip hand pockets.</div>
-                                             </li>
-                                             <li>
-                                                <div>Straight hem.</div>
-                                             </li>
-                                             <li>
-                                                <div>100% polyester. <br />Lining: 100% polyester.</div>
-                                             </li>
-                                             <li>
-                                                <div>Machine wash, tumble dry.</div>
-                                             </li>
-                                             <li>
-                                                <div>Imported.</div>
-                                             </li>
-                                             <li>
-                                                <div>Product measurements were taken using size MD. Please note that measurements may vary by size.</div>
-                                             </li>
-                                          </ul>
+                                          <p>{{singleProductDetails.description}}</p>
                                        </div>
                                     </div>
                                     
@@ -510,19 +460,19 @@
                   <div class="row pos_content">
                      <div class="product_accessoriesslide owl-carousel">
                         <!-- style products default -->
-                        <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="1" data-id-product-attribute="1" itemscope itemtype="http://schema.org/Product">
-                           <div class="img_block">
+                        <article class="style_product_default product-miniature js-product-miniature item_in" ng-repeat="item in relatedProductDetails" data-id-product="{{item.id}}" data-id-product-attribute="{{item.id}}" itemscope itemtype="http://schema.org/Product">
+                           <div class="img_block" ng-if="item.product_image">
                               <a href="<?php echo base_url('home/Details'); ?>">
                               <img class="first-image "
-                                 src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/162-home_default/originals-kaval-windbreaker-winter-jacket.jpg" 
+                                 src="<?php echo base_url('assets/img/'); ?>{{item.product_image}}" 
                                  alt = "Originals Kaval Windbreaker..."
-                                 data-full-size-image-url = "http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/162-large_default/originals-kaval-windbreaker-winter-jacket.jpg"
+                                 data-full-size-image-url = "<?php echo base_url('assets/img/'); ?>{{item.product_image}}"
                                  >
-                              <img class="img-responsive second-image animation1" 
+                             <!--  <img class="img-responsive second-image animation1" 
                                  src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/161-home_default/originals-kaval-windbreaker-winter-jacket.jpg" 
                                  alt="" itemprop="image"  />
-                              </a>
-                              <div class="quick-view">
+                              </a> -->
+                              <!-- <div class="quick-view">
                                  <a class="quick_view" href="#" data-link-action="quickview" title="Quick view">
                                  <span>Quick view</span>
                                  </a>
@@ -530,13 +480,13 @@
                               <ul class="product-flag">
                                  <li class="discount"><span>-10%</span></li>
                                  <li class="new"><span>New</span></li>
-                              </ul>
+                              </ul> -->
                            </div>
                            <div class="product_desc">
                               <div class="inner_desc">
-                                 <div class="manufacturer"><a href="<?php echo base_url('home/Details'); ?>">Studio Design</a></div>
-                                 <h3 itemprop="name"><a href="<?php echo base_url('home/Details'); ?>" class="product_name one_line" title="Originals Kaval Windbreaker Winter Jacket">Originals Kaval Windbreaker Winter Jacket</a></h3>
-                                 <div class="hook-reviews">
+                                 <!-- <div class="manufacturer"><a href="<?php echo base_url('home/Details'); ?>">Studio Design</a></div> -->
+                                 <h3 itemprop="name"><a href="<?php echo base_url('home/Details'); ?>" class="product_name one_line" title="Originals Kaval Windbreaker Winter Jacket">{{item.name}}</a></h3>
+                                 <div class="hook-reviews" ng-if="item.review">
                                     <div class="comments_note" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                                        <div class="star_content clearfix">
                                           <div class="star star_on"></div>
@@ -552,11 +502,11 @@
                                     </div>
                                  </div>
                                  <div class="product-price-and-shipping">
-                                    <span class="sr-only">Regular price</span>
-                                    <span class="regular-price">₹23.90</span>
-                                    <span class="sr-only">Price</span>
-                                    <span itemprop="price" class="price price-sale">₹21.51</span>
-                                    <span class="discount-percentage discount-product">-10%</span>
+                                   <!--  <span class="sr-only">Regular price</span>
+                                    <span class="regular-price">₹23</span>
+                                    <span class="sr-only">Price</span> -->
+                                    <span itemprop="price" class="price price-sale">₹{{item.price}}</span>
+                                    <!-- <span class="discount-percentage discount-product">-10%</span> -->
                                  </div>
                                  <ul class="add-to-links">
                                     <li class="cart">
@@ -585,20 +535,7 @@
                                  <div class="availability-list in-stock">Availability: <span>300 In Stock</span></div>
                               </div>
                               <div class="product-desc" itemprop="description">
-                                 <ul>
-                                    <li>
-                                       <div>Block out the haters with the fresh adidas® Originals Kaval Windbreaker Jacket.</div>
-                                    </li>
-                                    <li>
-                                       <div><em>Part of the Kaval Collection.</em></div>
-                                    </li>
-                                    <li>
-                                       <div>Regular fit is eased, but not sloppy, and perfect for any activity.</div>
-                                    </li>
-                                    <li>
-                                       <div>Plain-woven jacket specifically constructed for freedom of movement.</div>
-                                    </li>
-                                 </ul>
+                                 {{item.description}}
                               </div>
                               <div class="variant-links">
                                  <div class="variant-links">
@@ -619,7 +556,7 @@
                         <!-- style products default type 1 -->
                         <!-- end style products default type 3 -->                     
                         <!-- style products default -->
-                        <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="2" data-id-product-attribute="9" itemscope itemtype="http://schema.org/Product">
+                        <!-- <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="2" data-id-product-attribute="9" itemscope itemtype="http://schema.org/Product">
                            <div class="img_block">
                               <a href="<?php echo base_url('home/Details'); ?>" class="thumbnail product-thumbnail">
                               <img class="first-image "
@@ -720,12 +657,12 @@
                                  </div>
                               </div>
                            </div>
-                        </article>
+                        </article> -->
                         <!-- end style products default --> 
                         <!-- style products default type 1 -->
                         <!-- end style products default type 3 -->                     
                         <!-- style products default -->
-                        <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="3" data-id-product-attribute="13" itemscope itemtype="http://schema.org/Product">
+                        <!-- <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="3" data-id-product-attribute="13" itemscope itemtype="http://schema.org/Product">
                            <div class="img_block">
                               <a href="<?php echo base_url('home/Details'); ?>" class="thumbnail product-thumbnail">
                               <img class="first-image "
@@ -808,12 +745,12 @@
                               <div class="variant-links">
                               </div>
                            </div>
-                        </article>
+                        </article> -->
                         <!-- end style products default --> 
                         <!-- style products default type 1 -->
                         <!-- end style products default type 3 -->                     
                         <!-- style products default -->
-                        <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="6" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+                        <!-- <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="6" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
                            <div class="img_block">
                               <a href="<?php echo base_url('home/Details'); ?>" class="thumbnail product-thumbnail">
                               <img class="first-image "
@@ -903,12 +840,12 @@
                               <div class="variant-links">
                               </div>
                            </div>
-                        </article>
+                        </article> -->
                         <!-- end style products default --> 
                         <!-- style products default type 1 -->
                         <!-- end style products default type 3 -->                     
                         <!-- style products default -->
-                        <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="8" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+                        <!-- <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="8" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
                            <div class="img_block">
                               <a href="<?php echo base_url('home/Details'); ?>" class="thumbnail product-thumbnail">
                               <img class="first-image "
@@ -994,12 +931,12 @@
                               <div class="variant-links">
                               </div>
                            </div>
-                        </article>
+                        </article> -->
                         <!-- end style products default --> 
                         <!-- style products default type 1 -->
                         <!-- end style products default type 3 -->                     
                         <!-- style products default -->
-                        <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="9" data-id-product-attribute="22" itemscope itemtype="http://schema.org/Product">
+                        <!-- <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="9" data-id-product-attribute="22" itemscope itemtype="http://schema.org/Product">
                            <div class="img_block">
                               <a href="<?php echo base_url('home/Details'); ?>" class="thumbnail product-thumbnail">
                               <img class="first-image "
@@ -1103,7 +1040,7 @@
                                  </div>
                               </div>
                            </div>
-                        </article>
+                        </article> -->
                         <!-- end style products default --> 
                         <!-- style products default type 1 -->
                         <!-- end style products default type 3 -->                     
