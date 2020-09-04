@@ -37,7 +37,13 @@ class Home extends CI_Controller {
     			$this->load->view('website/header');
 					$this->load->view('website/product-view');
 					$this->load->view('website/footer');
-          break;          
+          break;
+    case 'products': 
+    			$this->load->view('website/header');
+					$this->load->view('website/product-list');
+					$this->load->view('website/footer');
+          break;
+                    
             
     }  
 	}
@@ -186,6 +192,10 @@ class Home extends CI_Controller {
 			$this->db->insert('product',$data);
 		}
 		$this->load->view('test');
+	}
+	public function getAllProduct()
+	{
+		echo $this->Home->getAllProduct();
 	}
 	
 		

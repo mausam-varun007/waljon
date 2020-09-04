@@ -74,6 +74,23 @@ class Home_model extends MY_Model {
 		// echo $this->db->last_query();die();
 		return $query->result();
 	}
+	public function getAllProduct()
+	{
+		$this->db->select('SQL_CALC_FOUND_ROWS null as rows,LEFT(product.name,25) as name,LEFT(product.description,30) as description,product.product_image,product.price',false);
+		$this->db->from('product');
+		$pageSize = $this->input->post('pageSize');
+        $pageIndex = $this->input->post('pageIndex');
+        $offsetRange = $pageSize*($pageIndex-1);       
+      
+        $this->db->limit($this->input->post('pageSize'),$offsetRange);
+		$query = $this->db->get();
+		//echo $this->db->last_query();
+		if ($query->num_rows() > 0) {
+			$allCount = $this->db->query('SELECT FOUND_ROWS() count;')->row()->count;
+			$result = $query->result();
+			return json_encode(array('status'=>1,'data'=>$result,'total'=>$allCount));
+		}
+	}
 
 	
 }
