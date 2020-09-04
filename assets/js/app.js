@@ -125,6 +125,11 @@ app.config(function($stateProvider, $locationProvider,
             url : '/checkout', 
             templateUrl : Base_url+'view/checkout'  
             // controller : "CheckoutViewCtrl"
+        })
+        .state('Products', { 
+            url : '/products', 
+            templateUrl : Base_url+'view/products',  
+            controller : "AllProdcutCtrl"
         });
   
     // Redirect to home page if url does not  
@@ -242,4 +247,24 @@ app.controller('ProdcutViewCtrl', function($scope,toastr,$http,$state) {
         }
     }
     $scope.getRelatedProductDetails();
+});
+app.controller('AllProdcutCtrl', function($scope,toastr,$http,$state) {
+  $scope.pagination = [];
+  $scope.pagination.pageIndex = 1;
+  $scope.pagination.pageSizeSelected = 10;
+    $scope.getAllProduct = function () {
+        $scope.isLoadding = true;
+        $http.post(Base_url + 'getAllProduct',{
+            pageIndex       : $scope.pagination.pageIndex,
+            pageSize        : $scope.pagination.pageSizeSelected
+        })
+        .then(function (response) {
+          if (response.data.status) {
+            $scope.productsList = response.data.data;
+            $scope.pagination.allCount = response.data.total;
+          }
+            
+        });
+    };
+    $scope.getAllProduct();
 });

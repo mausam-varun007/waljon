@@ -48,6 +48,11 @@ class Home extends CI_Controller {
 					$this->load->view('website/checkout');
 					$this->load->view('website/footer');
           break;        
+    case 'products': 
+    			$this->load->view('website/header');
+					$this->load->view('website/product-list');
+					$this->load->view('website/footer');
+          break;
     }  
 	}
 
@@ -196,12 +201,15 @@ class Home extends CI_Controller {
 		}
 		$this->load->view('test');
 	}
+	public function getAllProduct()
+	{
+		echo $this->Home->getAllProduct();
+	}
 	public function getSingleProductDetails(){
       	echo $this->Home->getSingleProductDetails();     
     }
     public function getRelatedProductDetails(){
       	echo $this->Home->getRelatedProductDetails();     
     }
-    
 		
 }
