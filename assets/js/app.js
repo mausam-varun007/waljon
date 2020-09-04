@@ -115,6 +115,16 @@ app.config(function($stateProvider, $locationProvider,
             url : '/product-view', 
             templateUrl : Base_url+'view/product-view',  
             controller : "ProdcutViewCtrl"
+        })
+        .state('Cart', { 
+            url : '/cart', 
+            templateUrl : Base_url+'view/cart'  
+            // controller : "CartViewCtrl"
+        })
+        .state('Checkout', { 
+            url : '/checkout', 
+            templateUrl : Base_url+'view/checkout'  
+            // controller : "CheckoutViewCtrl"
         });
   
     // Redirect to home page if url does not  
