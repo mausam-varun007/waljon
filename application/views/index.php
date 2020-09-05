@@ -25,6 +25,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" type="text/css" media="all">
 
       <link rel="stylesheet" href="<?php echo base_url('assets/css/style2.css');?>" type="text/css" media="all">
+      <!-- <link rel="stylesheet" href="<?php echo base_url('assets/css/themeStyle.css');?>" type="text/css" media="all"> -->
       <link rel="stylesheet" href="<?php echo base_url()?>assets/css/angular-toastr.css" />
       <script type="text/javascript">
         var Base_url = "<?=base_url()?>index.php/";   
