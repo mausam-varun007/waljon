@@ -38,13 +38,21 @@ class Home extends CI_Controller {
 					$this->load->view('website/product-view');
 					$this->load->view('website/footer');
           break;
+    case 'cart': 
+    			$this->load->view('website/header');
+					$this->load->view('website/cart');
+					$this->load->view('website/footer');
+          break;                   
+    case 'checkout': 
+    			$this->load->view('website/header');
+					$this->load->view('website/checkout');
+					$this->load->view('website/footer');
+          break;        
     case 'products': 
     			$this->load->view('website/header');
 					$this->load->view('website/product-list');
 					$this->load->view('website/footer');
           break;
-                    
-            
     }  
 	}
 
