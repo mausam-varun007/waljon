@@ -7,7 +7,7 @@
          <div class="breadcrumb_container " data-depth="2">
             <div class="container">
                <div class="name_category">
-                  <h2>Beauty &amp; Health</h2>
+                  <h2>{{title}}</h2>
                </div>
                <nav data-depth="2" class="breadcrumb">
                   <ol itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -19,7 +19,7 @@
                      </li>
                      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <a itemprop="item" href="#">
-                        <span itemprop="name">Beauty &amp; Health</span>
+                        <span itemprop="name">{{title}}</span>
                         </a>
                         <meta itemprop="position" content="2">
                      </li>
@@ -592,18 +592,18 @@
                                        <!-- style products default -->
                                        <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="13" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
                                           <div class="img_block">
-                                             <a href="<?php echo base_url('home/Details'); ?>" class="thumbnail product-thumbnail">
+                                             <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
                                              <img class="first-image "
                                                 src="assets/img/{{item.product_image}}" 
                                                 alt = "Fila Locker Room Varsity..."
-                                                data-full-size-image-url = "http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/112-large_default/brown-bear-vector-graphics.jpg"
+                                                data-full-size-image-url = "assets/img/{{item.product_image}}"
                                                 >
                                              <img class="img-responsive second-image animation1" 
-                                                src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/113-home_default/brown-bear-vector-graphics.jpg" 
+                                                src="assets/img/{{item.product_image}}" 
                                                 alt="" itemprop="image"  />
                                              </a>
                                              <div class="quick-view">
-                                                <a class="quick_view" href="#" data-link-action="quickview" title="Quick view">
+                                                <a class="quick_view" ui-sref="ProductView({id:item.product_id})" data-link-action="quickview" title="Quick view">
                                                 <span>Quick view</span>
                                                 </a>
                                              </div>
@@ -613,8 +613,8 @@
                                           </div>
                                           <div class="product_desc">
                                              <div class="inner_desc">
-                                                <div class="manufacturer"><a href="<?php echo base_url('home/Details'); ?>">{{item.name}}</a></div>
-                                                <h3 itemprop="name"><a href="<?php echo base_url('home/Details'); ?>" class="product_name one_line" title="Fila Locker Room Varsity Jacket">{{item.description}}..</a></h3>
+                                                <div class="manufacturer"><a ui-sref="ProductView({id:item.product_id})">{{item.name}}</a></div>
+                                                <h3 itemprop="name"><a ui-sref="ProductView({id:item.product_id})" class="product_name one_line" title="Fila Locker Room Varsity Jacket">{{item.description}}..</a></h3>
                                                 <div class="hook-reviews">
                                                    <div class="comments_note" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                                                       <div class="star_content clearfix">

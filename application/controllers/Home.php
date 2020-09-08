@@ -138,7 +138,9 @@ class Home extends CI_Controller {
 	public function test()
 	{
 		if ($this->input->server('REQUEST_METHOD') == 'POST') {
-			
+			$gallery1 = '';
+			$gallery2 = '';
+			$gallery3 = '';
 			 $config['upload_path'] = 'assets/img/';
 		        $config['allowed_types'] = 'gif|jpg|png';
 		        $config['encrypt_name'] = TRUE;
@@ -153,7 +155,7 @@ class Home extends CI_Controller {
 		            $product_image = $uploadData['file_name'];
 		        }
 			}
-			if ($_FILES['gallery1']['name']) {
+			if (!empty($_FILES['gallery1']['name'])) {
 				if (!$this->upload->do_upload('gallery1')) {
 		            $error = array('error' => $this->upload->display_errors());
 		        } else {
@@ -162,7 +164,7 @@ class Home extends CI_Controller {
 		            $gallery1 = $uploadData['file_name'];
 		        }
 			}
-			if ($_FILES['gallery2']['name']) {
+			if (!empty($_FILES['gallery2']['name'])) {
 				if (!$this->upload->do_upload('gallery2')) {
 		            $error = array('error' => $this->upload->display_errors());
 		        } else {
@@ -171,7 +173,7 @@ class Home extends CI_Controller {
 		            $gallery2 = $uploadData['file_name'];
 		        }
 			}
-			if ($_FILES['gallery3']['name']) {
+			if (!empty($_FILES['gallery3']['name'])) {
 				if (!$this->upload->do_upload('gallery3')) {
 		            $error = array('error' => $this->upload->display_errors());
 		        } else {
@@ -203,5 +205,6 @@ class Home extends CI_Controller {
     public function getRelatedProductDetails(){
       	echo $this->Home->getRelatedProductDetails();     
     }
+    
 		
 }

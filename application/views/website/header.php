@@ -32,16 +32,6 @@
                            </div>
                         </div>
                      </div>
-                     <script type="text/javascript">
-                        var wishlistProductsIds='';
-                        var baseDir ='http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/';
-                        var static_token='203b2fb46b107eabda9dd64ae8ebc173';
-                        var isLogged ='0';
-                        var loggin_required='You must be logged in to manage your wishlist.';
-                        var added_to_wishlist ='The product was successfully added to your wishlist.';
-                        var mywishlist_url='module/blockwishlist/mywishlist';
-                           var isLoggedWishlist=false;
-                     </script>
                      <div id="_desktop_wishtlist">
                         <div class="wishtlist_top">
                            <a class="" href="<?php echo base_url('home/Wishlist'); ?>">
@@ -59,9 +49,6 @@
                            </a>
                         </div>
                      </div> -->
-                     <script type="text/javascript">
-                        var baseDir =''; 
-                     </script>
                      <div id="_desktop_static">
                         <div class="static-nav">Welcome to Waljon</div>
                      </div>
@@ -145,7 +132,7 @@
                                                                            <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>                                                                                           
                                                                            <ul class="category-sub-menu" >
                                                                               <li data-ng-repeat="subcategory in category.subcategory">
-                                                                                 <a href="<?php echo base_url('home/filter'); ?>">{{subcategory.subcategory}}</a>
+                                                                                 <a href="javascript:void(0)" data-ng-click="redirectToProductPage(subcategory.subcategory)">{{subcategory.subcategory}}</a>
                                                                               </li>
                                                                            </ul>
                                                                         </li>

@@ -112,12 +112,12 @@ app.config(function($stateProvider, $locationProvider,
             controller : "SignupCtrl"
         })
         .state('ProductView', { 
-            url : '/product-view', 
+            url : '/product-view/:id', 
             templateUrl : Base_url+'view/product-view',  
             controller : "ProdcutViewCtrl"
         })
         .state('Products', { 
-            url : '/products', 
+            url : '/products/:id', 
             templateUrl : Base_url+'view/products',  
             controller : "AllProdcutCtrl"
         });
@@ -128,29 +128,37 @@ app.config(function($stateProvider, $locationProvider,
 }); 
 
 app.controller('MainCtrl', function() {}); 
-app.controller('HomeCtrl', function($scope,homeService) {
-   
-    $scope.items1 = [1,2,3,4,5];
-    $scope.items2 = [1,2,3,4,5,6,7,8,9,10];
-    $scope.slides = [
-    {
-      image: 'http://lorempixel.com/400/200/'
-    },
-    {
-      image: 'http://lorempixel.com/400/200/food'
-    },
-    {
-      image: 'http://lorempixel.com/400/200/sports'
-    },
-    {
-      image: 'http://lorempixel.com/400/200/people'
-    }
-  ];
-  $scope.myInterval = 3000;
+app.controller('HomeCtrl', function($scope,homeService,$state,$http) {
+    $scope.products = [];
    // $scope.newTest = 'hi';
     homeService.getHeaderList().then(function(response){
          $scope.headerMenuList = angular.copy(response); 
     })
+    $scope.redirectToProductPage = function(id) {
+        $state.go('Products',{id:id.replace(' ','-')});
+    }
+    $http.post(Base_url + 'getAllProduct',{home_category_id:1}).then(function(response) {
+        if (response.data.status) {
+            $scope.products.best_sellers = response.data.data;
+        }
+    });
+    $http.post(Base_url + 'getAllProduct',{home_category_id:2}).then(function(response) {
+        if (response.data.status) {
+            $scope.products.hot_deals = response.data.data;
+        }
+    });
+    $http.post(Base_url + 'getAllProduct',{home_category_id:3}).then(function(response) {
+        if (response.data.status) {
+            $scope.products.feature_product = response.data.data;
+        }
+    });
+    $http.post(Base_url + 'getAllProduct',{home_category_id:4}).then(function(response) {
+        if (response.data.status) {
+            $scope.products.new_arrivals = response.data.data;
+        }
+    });
+
+
 
 
 });
@@ -190,31 +198,17 @@ app.controller('SignupCtrl', function($scope,toastr,$http,$state) {
         }
     };
 });
-app.controller('ProdcutViewCtrl', function($scope,toastr,$http,$state) {
+app.controller('ProdcutViewCtrl', function($scope,toastr,$http,$state,$stateParams,homeService) {
 
     $scope.product_id = 4;
     $scope.singleProductDetails = [];
     $scope.relatedProductDetails = [];
-
-    $scope.submitForm = function (isValid) {
-        if (isValid) {
-            $scope.isLoadding = true;
-            $http.post(Base_url + 'UserSignUp',$scope.userData)
-                .then(function (response) {
-                    if (response.data.status) {
-                        toastr.success(response.data.msg);
-                        $state.go('Login');
-                    }
-                    else{
-                        toastr.error(response.data.msg);
-                    }
-                });
-        }
-    };
-
+    homeService.getHeaderList().then(function(response){
+         $scope.headerMenuList = angular.copy(response); 
+    })
     $scope.getSingleProductDetails = function() {
         if ($scope.product_id != null && $scope.product_id != '' && $scope.product_id != undefined) {
-            $http.post(Base_url + 'getSingleProductDetails', { product_id: $scope.product_id}).then(function(response) {
+            $http.post(Base_url + 'getSingleProductDetails', { product_id: $stateParams.id}).then(function(response) {
                 if (response.data.status) {
                     $scope.singleProductDetails = angular.copy(response.data.data);
                 }
@@ -238,13 +232,17 @@ app.controller('ProdcutViewCtrl', function($scope,toastr,$http,$state) {
     }
     $scope.getRelatedProductDetails();
 });
-app.controller('AllProdcutCtrl', function($scope,toastr,$http,$state) {
+app.controller('AllProdcutCtrl', function($scope,toastr,$http,$state,$stateParams,homeService) {
   $scope.pagination = [];
   $scope.pagination.pageIndex = 1;
   $scope.pagination.pageSizeSelected = 10;
+  homeService.getHeaderList().then(function(response){
+       $scope.headerMenuList = angular.copy(response); 
+  })
     $scope.getAllProduct = function () {
         $scope.isLoadding = true;
         $http.post(Base_url + 'getAllProduct',{
+            subcategory     : $stateParams.id,
             pageIndex       : $scope.pagination.pageIndex,
             pageSize        : $scope.pagination.pageSizeSelected
         })
@@ -252,9 +250,13 @@ app.controller('AllProdcutCtrl', function($scope,toastr,$http,$state) {
           if (response.data.status) {
             $scope.productsList = response.data.data;
             $scope.pagination.allCount = response.data.total;
+            $scope.title = response.data.title.subcategory;
           }
             
         });
     };
     $scope.getAllProduct();
+    $scope.redirectToProductPage = function(id) {
+        $state.go('Products',{id:id.replace(' ','-')});
+    }
 });
