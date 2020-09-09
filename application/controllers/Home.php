@@ -122,7 +122,7 @@ class Home extends CI_Controller {
 		$this->db->select('*');
 		$this->db->from('parent_category');
 		$this->db->where('is_active',1);
-		$this->db->limit(9);
+		//$this->db->limit(11);
 		$parent_category = $this->db->get()->result();
 		if (!empty($parent_category)) {
 			foreach ($parent_category as $key => $value) {
