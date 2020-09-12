@@ -258,7 +258,10 @@ ul.dd-menu.subcategory li {
     height: 43px;
 }
 .dropdown.category .dd-button {
-    height: 45px;
+    height: 35px;
+}
+label.dropdown.category {
+    margin-bottom: 0px;
 }
 @media screen and (max-width: 568px){
 	.pos-sub-inner.header-xs{
