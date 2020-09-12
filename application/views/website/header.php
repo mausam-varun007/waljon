@@ -110,47 +110,50 @@
                              </a>
                           </li>
                           <li class=" menu-item menu-item3  hasChild ">
-                             <a class="tt-upercase" href="<?php echo base_url('home/filter'); ?>" >
+                             <a class="tt-upercase">
                              <span> Category </span>
                              <i class="fa fa-caret-down"></i></a>
                              <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>
                              <div class="pos-sub-menu menu-dropdown col-xs-12 col-sm-12  menu_slidedown" style="width: 100%">
-                                <div class="pos-sub-inner">
+                                <div class="pos-sub-inner header-md">
                                    <div class="pos-menu-row row ">
                                       <div class="pos-menu-col sub-category" data-ng-repeat="parentitem in headerMenuList">
-                                         <ul class="ul-column ">
-                                            <li class=" menu-item menu-item3  hasChild hasSubChild">
-                                               <a href="<?php echo base_url('home/filter'); ?>" >
-                                               <span> {{parentitem.parent_category}} </span></a>
-                                               <div class="pos-sub-menu menu-dropdown col-xs-12 col-sm-12  menu_slidedown inner-menu" ng-if="parentitem.category.length >= 2">
-                                                  <div class="pos-sub-inner">
-                                                     <div class="pos-menu-row row ">
-                                                        <div class="pos-menu-col col-xs-6 col-sm-3 " data-ng-repeat="category in parentitem.category">
-                                                           <ul class="ul-column ">
-                                                              <li class="submenu-item ">
-                                                                 <a href="<?php echo base_url('home/filter'); ?>">{{category.category}}</a>
-                                                                 <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>                                                                                           
-                                                                 <ul class="category-sub-menu" >
-                                                                    <li data-ng-repeat="subcategory in category.subcategory" class="subcategory-li">
-                                                                       <a href="javascript:void(0)" data-ng-click="redirectToProductPage(subcategory.subcategory)">{{subcategory.subcategory}}</a>
-                                                                    </li>
-                                                                 </ul>
-                                                              </li>
-                                                           </ul>
-                                                        </div>
-                                                     </div>
-                                                     <div class="pos-menu-row row ">
-                                                        <div class="pos-menu-col col-xs-12 col-sm-12  ">
-                                                           <ul class="ul-column ">
-                                                              <li class="submenu-item ">
-                                                                 <a href="<?php echo base_url('home/filter'); ?>"><img src="/pos_ecolife_cosmetic/cosmetic3/img/cms/banner-menu.jpg" alt="" /></a>
-                                                              </li>
-                                                           </ul>
-                                                        </div>
-                                                     </div>
-                                                  </div>
-                                               </div>
-                                               <div class="menu-dropdown cat-drop-menu menu_slidedown" ng-if="parentitem.category.length < 2">
+                                         <ul class="ul-column">
+                                            <li class="menu-item menu-item3 hasChild hasSubChild submenu-item">
+                                              <a>
+                                               <span> {{parentitem.parent_category}} </span>
+                                              </a>
+                                              <span class="icon-drop-mobile"><i class="material-icons add">add </i><i class="material-icons remove">remove </i></span>
+                                              <div class="pos-sub-menu menu-dropdown col-xs-12 col-sm-12 menu_slidedown inner-menu" ng-if="parentitem.category.length >= 2" style="width: 100%"
+                                                >
+                                                <div class="pos-sub-inner">
+                                                   <div class="pos-menu-row row ">
+                                                      <div class="pos-menu-col col-xs-6 col-sm-3 " data-ng-repeat="category in parentitem.category">
+                                                         <ul class="ul-column ">
+                                                            <li class="submenu-item ">
+                                                               <a href="<?php echo base_url('home/filter'); ?>">{{category.category}}</a>
+                                                               <ul class="category-sub-menu" >
+                                                                  <li data-ng-repeat="subcategory in category.subcategory" class="subcategory-li">
+                                                                     <a href="javascript:void(0)" data-ng-click="redirectToProductPage(subcategory.subcategory)">{{subcategory.subcategory}}</a>
+                                                                  </li>
+                                                               </ul>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+
+                                                   </div>
+                                                   <div class="pos-menu-row row ">
+                                                      <div class="pos-menu-col col-xs-12 col-sm-12  ">
+                                                         <ul class="ul-column ">
+                                                            <li class="submenu-item ">
+                                                               <a href="<?php echo base_url('home/filter'); ?>"><img src="/pos_ecolife_cosmetic/cosmetic3/img/cms/banner-menu.jpg" alt="" /></a>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                              </div>
+                                              <div class="menu-dropdown cat-drop-menu menu_slidedown" ng-if="parentitem.category.length < 2">
                                                   <div data-ng-repeat="category in parentitem.category">   
                                                      <ul class="pos-sub-inner">
                                                         <li>
@@ -161,9 +164,36 @@
                                                         </li>
                                                      </ul>
                                                   </div>
-                                               </div>                                   
+                                              </div> 
+                                        
                                             </li>
                                          </ul>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="pos-sub-inner header-xs">
+                                    <div class="pos-menu-row row ">
+                                      <div class="pos-menu-col sub-category" data-ng-repeat="parentitem in headerMenuList">  
+                                        <label class="dropdown">
+                                          <div class="dd-button">
+                                            {{parentitem.parent_category}}
+                                          </div>
+                                          <input type="checkbox" class="dd-input" id="test">
+                                          <ul class="dd-menu">
+                                            <li data-ng-repeat="category in parentitem.category">
+                                              <label class="dropdown category">
+                                                <div class="dd-button">
+                                                  {{category.category}}
+                                                </div>
+                                                <input type="checkbox" class="dd-input" id="test">
+                                                <ul class="dd-menu subcategory">
+                                                  <li data-ng-repeat="subcategory in category.subcategory">{{subcategory.subcategory}}
+                                                  </li>
+                                                </ul> 
+                                              </label>
+                                            </li>
+                                          </ul> 
+                                        </label>
                                       </div>
                                    </div>
                                 </div>
