@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/themes/theme_ecolife_cosmetic3/assets/cache/bottom-16c3cf16.js" ></script>
+<script type="text/javascript" src="<?php echo base_url('assets/cache/bottom-16c3cf16.js');?>" ></script>
 <header id="header">
   <div class="header-banner">
   </div>
@@ -13,7 +13,7 @@
                     <i class="material-icons">expand_more</i>
                     </button>
                     <button data-target="#" data-toggle="dropdown" class=" btn-unstyle hidden-lg-up">
-                    <i class="ion-ios-contact"></i>
+                    <i class="fa fa-user"></i>
                     </button>
                     <ul class="dropdown-menu">
                        <li>
@@ -60,7 +60,7 @@
            <div class="row row-mobile">
               <div class="col-mobile col-md-4 col-xs-4">
                  <div class="float-xs-left" id="menu-icon">
-                    <i class="ion-android-menu"></i>
+                    <i class="fa fa-bars"></i>
                  </div>
                  <div id="mobile_top_menu_wrapper" class="row hidden-lg-up" style="display:none;">
                     <div class="top-header-mobile">
