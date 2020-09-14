@@ -419,7 +419,7 @@
                               Add featured products to weekly line up	
                            </div>
                         </div>
-                        <div class=" pos_content row">
+                        <div class="pos_content row">
                            <div class="feature-item owl-carousel">
                               <div class="item-product" data-ng-repeat="item in products.feature_product">
                                  <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="16" data-id-product-attribute="101" itemscope itemtype="http://schema.org/Product">
@@ -705,41 +705,6 @@
                   </div>
                </div>
             </div>
-            <script type="text/javascript">
-               $(document).ready(function() {
-               	var testi = $(".testimonialsSlide");
-               	testi.owlCarousel({
-               		autoplay :false,
-               		autoplayHoverPause: true,
-               		smartSpeed : 1000,
-               		nav :false,
-               		dots : true, 
-               		responsiveClass:true,
-               		responsive : {
-               		  0 : {
-               	          items: 1,
-               	      }, 
-               		  360 : {
-               	          items: 1,
-               	      },
-               	      576 : {
-               	          items: 1,
-               	      },
-               	      768 : {
-               	          items: 1,
-               	      },
-               	      992 : {
-               	          items:2,
-               	      },
-               		  1200 : {
-               	          items: 2,
-               	      }
-               		}
-               	});
-               });
-               
-               
-            </script>
             <div class="container">
                <div class="pos_logo product_block_container">
                   <div class="row pos_content">
@@ -799,3 +764,37 @@
             </div>
          </div>
          
+
+          <script type="text/javascript">
+               $(document).ready(function() {
+                  var testi = $(".testimonialsSlide");
+                  testi.owlCarousel({
+                     autoplay :false,
+                     autoplayHoverPause: true,
+                     smartSpeed : 1000,
+                     nav :false,
+                     dots : true, 
+                     responsiveClass:true,
+                     responsive : {
+                       0 : {
+                            items: 1,
+                        }, 
+                       360 : {
+                            items: 1,
+                        },
+                        576 : {
+                            items: 1,
+                        },
+                        768 : {
+                            items: 1,
+                        },
+                        992 : {
+                            items:2,
+                        },
+                       1200 : {
+                            items: 2,
+                        }
+                     }
+                  });
+               });
+            </script>

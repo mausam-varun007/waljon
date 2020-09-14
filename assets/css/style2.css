@@ -161,7 +161,12 @@ section.checkout-step #conditions-to-approve {
 li.subcategory-li a {
     font-size: 12px !important;
 }
-
+.pos_bannerslide.ng-scope {
+    margin-top: 130px;
+}
+.unvisible, .headerSpace {
+    display: none;
+}
 
 
 /* Dropdown */
@@ -175,7 +180,13 @@ li.subcategory-li a {
 .dd-button {
   	display: inline-block;
     border-bottom: 1px solid #ddd;
-    width: 100%;
+    width: 100%;.pos_bannerslide.ng-scope {
+    margin-top: 130px;
+}
+.unvisible, .headerSpace {
+    display: none;
+}
+    position: relative;
     text-align: left;
     padding: 10px 49px 10px 20px;
     background-color: #ffffff;
@@ -269,6 +280,11 @@ label.dropdown.category {
 	}
 	.pos-sub-inner.header-md{
 		display: none;
+	}
+}
+@media screen and (max-width: 991px){
+	.pos_bannerslide {
+    margin-top: 0px !important;
 	}
 }
 
