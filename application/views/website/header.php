@@ -1,4 +1,4 @@
-<script type="text/javascript" src="<?php echo base_url('assets/cache/bottom-16c3cf16.js');?>" ></script>
+<script type="text/javascript" src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/themes/theme_ecolife_cosmetic3/assets/cache/bottom-16c3cf16.js" ></script>
 <header id="header">
   <div class="header-banner">
   </div>
