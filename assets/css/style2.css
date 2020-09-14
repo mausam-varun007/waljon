@@ -176,6 +176,7 @@ li.subcategory-li a {
   	display: inline-block;
     border-bottom: 1px solid #ddd;
     width: 100%;
+    position: relative;
     text-align: left;
     padding: 10px 49px 10px 20px;
     background-color: #ffffff;
