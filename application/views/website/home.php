@@ -116,7 +116,7 @@
                                  <div class="bestsellerSlide owl-carousel ">
                                     <div class="item-product" data-ng-repeat="item in products.best_sellers">
                                        <!-- style products default -->
-                                       <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="8" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+                                       <article class="style_product_default mediam-size-product product-miniature js-product-miniature item_in" data-id-product="8" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
                                           <div class="img_block">
                                              <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
                                              <img class="first-image "
@@ -537,7 +537,7 @@
                      <div class="newSlide owl-carousel ">
                         <div class="item-product" data-ng-repeat="item in products.new_arrivals">
                            <!-- style products default -->
-                           <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="17" data-id-product-attribute="109" itemscope itemtype="http://schema.org/Product">
+                           <article class="style_product_default mediam-size-product product-miniature js-product-miniature item_in" data-id-product="17" data-id-product-attribute="109" itemscope itemtype="http://schema.org/Product">
                               <div class="img_block">
                                  <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
                                  <img class="first-image "
@@ -662,7 +662,7 @@
                         <div class="item-testimonials">
                            <div class="item">
                               <div class="content_author">
-                                 <div class="img"><img src="/pos_ecolife_cosmetic/cosmetic3/img/postestimonial/sample1.png" alt="Image Testimonial"></div>
+                                 <div class="img"><img src="<?php echo base_url() ?>assets/img/sample1.png" alt="Image Testimonial"></div>
                                  <div class="content_test">
                                     <div class="des_testimonial">All Perfect !! I have three sites with magento , this theme is the best !! Excellent support , advice theme installation package , sorry for English, are Italian but I had no problem !! Thank you !</div>
                                     <div class="des_inner">
@@ -676,7 +676,7 @@
                         <div class="item-testimonials">
                            <div class="item">
                               <div class="content_author">
-                                 <div class="img"><img src="/pos_ecolife_cosmetic/cosmetic3/img/postestimonial/sample2.png" alt="Image Testimonial"></div>
+                                 <div class="img"><img src="<?php echo base_url() ?>assets/img/sample2.png" alt="Image Testimonial"></div>
                                  <div class="content_test">
                                     <div class="des_testimonial">All Perfect !! I have three sites with magento , this theme is the best !! Excellent support , advice theme installation package , sorry for English, are Italian but I had no problem !! Thank you !</div>
                                     <div class="des_inner">
@@ -690,7 +690,7 @@
                         <div class="item-testimonials">
                            <div class="item">
                               <div class="content_author">
-                                 <div class="img"><img src="/pos_ecolife_cosmetic/cosmetic3/img/postestimonial/sample3.png" alt="Image Testimonial"></div>
+                                 <div class="img"><img src="<?php echo base_url() ?>assets/img/sample3.png" alt="Image Testimonial"></div>
                                  <div class="content_test">
                                     <div class="des_testimonial">All Perfect !! I have three sites with magento , this theme is the best !! Excellent support , advice theme installation package , sorry for English, are Italian but I had no problem !! Thank you !</div>
                                     <div class="des_inner">
