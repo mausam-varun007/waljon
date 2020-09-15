@@ -32,7 +32,7 @@
                  </div>
               </div>
            </div>
-           <div id="_desktop_wishtlist">
+           <!-- <div id="_desktop_wishtlist">
               <div class="wishtlist_top">
                  <a class="" href="<?php echo base_url('home/Wishlist'); ?>">
                  <i class="ion-android-favorite-outline"></i>
@@ -40,7 +40,7 @@
                  (<span class="cart-wishlist-number">0</span>)
                  </a>
               </div>
-           </div>
+           </div> -->
           <!--  <div id="_desktop_compare">
               <div class="compare_top">
                  <a href="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/module/poscompare/comparePage">
