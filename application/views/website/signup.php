@@ -2,7 +2,7 @@
    <div class="container">
       <div class="row">
          <div id="content-wrapper" class="col-xs-12">
-            <section id="main">
+            <section id="main" class="main-sec">
                <header class="page-header">
                   <h1>
                      Create an account
@@ -165,7 +165,7 @@
                            </div>
                         </section>
                         <footer class="form-footer clearfix">
-                           <button class="btn btn-primary form-control-submit float-xs-right" type="submit">
+                           <button class="btn btn-primary form-control-submit" type="submit">
                            Save
                            </button>
                         </footer>
