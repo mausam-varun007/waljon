@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div id="content-wrapper" class="col-xs-12">
-        <section id="main">
+        <section id="main" class="main-sec">
           <header class="page-header">
             <h1>
               Log in to your account
