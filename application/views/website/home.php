@@ -84,7 +84,7 @@
                </nav>
             </div>
          </div>
-         <div id="wrapper">
+         <div id="wrapper" class="home_page_sec">
             <div class="container">
                <div class="row">
                   <div id="content-wrapper" class="col-xs-12">
@@ -102,7 +102,7 @@
                               <div class="row pos_content">
                                  <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":1},768:{"items":2},992:{"items":5}}}'>
                                     <div owl-carousel-item="" data-ng-repeat="item in products.best_sellers" class="item">
-                                      <article class="style_product_default product-miniature js-product-miniature item_in" >
+                                      <article class="style_product_default product-miniature mediam-size-product js-product-miniature item_in" >
                                           <div class="img_block">
                                              <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
                                              <img class="first-image "
@@ -152,13 +152,13 @@
                            <div class="home-banner">
                               <div class="row">
                                  <div class="col col-md-3 col-xs-12">
-                                    <div class="banner-box"><a href="#"><img src="/pos_ecolife_cosmetic/cosmetic3/img/cms/4_1.jpg" alt="" /></a></div>
+                                    <div class="banner-box"><a href="#"><img src="assets/img/4_1.jpg" alt="" /></a></div>
                                  </div>
                                  <div class="col col-md-6 col-xs-12">
-                                    <div class="banner-box"><a href="#"><img src="/pos_ecolife_cosmetic/cosmetic3/img/cms/5_1.jpg" alt="" /></a></div>
+                                    <div class="banner-box"><a href="#"><img src="assets/img/5_1.jpg" alt="" /></a></div>
                                  </div>
                                  <div class="col col-md-3 col-xs-12">
-                                    <div class="banner-box"><a href="#"><img src="/pos_ecolife_cosmetic/cosmetic3/img/cms/6_1.jpg" alt="" /></a></div>
+                                    <div class="banner-box"><a href="#"><img src="assets/img/6_1.jpg" alt="" /></a></div>
                                  </div>
                               </div>
                            </div>
@@ -346,7 +346,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                        <img class="img-responsive" src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/modules/posfeaturedproducts/img/cms.png" alt="" title=""/>
+                        <img class="img-responsive" src="assets/img/cms.png" alt="" title=""/>
                      </div>
                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                         <div class="pos_title">
@@ -474,7 +474,7 @@
                   <div class="row pos_content">
                      <data-owl-carousel data-owl-items="6" class="owl-carousel" data-options="{navigation: true, pagination: false, rewindNav : false,items:6}">
                         <div owl-carousel-item="" data-ng-repeat="item in products.new_arrivals" class="item">
-                          <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="8" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+                          <article class="style_product_default product-miniature mediam-size-product js-product-miniature item_in" data-id-product="8" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
                                     <div class="img_block">
                                        <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
                                        <img class="first-image "
@@ -522,7 +522,7 @@
                   </div>
                </div>
                <div class="home-banner">
-                  <div class="banner-box"><a href="#"><img src="/pos_ecolife_cosmetic/cosmetic3/img/cms/7_1.jpg" alt="" /></a></div>
+                  <div class="banner-box"><a href="#"><img src="assets/img/7_1.jpg" alt="" /></a></div>
                </div>
                
             </div>
