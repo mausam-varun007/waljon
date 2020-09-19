@@ -269,7 +269,6 @@ ul.dd-menu.subcategory li {
 label.dropdown.category {
     margin-bottom: 0px;
 }
-
 .mediam-size-product .img_block{
 	height: 240px;
 }
@@ -354,6 +353,10 @@ footer.form-footer.clearfix {
 		display: none;
 	}
 }
-
+@media screen and (max-width: 991px){
+	.pos_bannerslide {
+    margin-top: 0px !important;
+	}
+}
 
 

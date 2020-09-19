@@ -90,20 +90,7 @@
                   <div id="content-wrapper" class="col-xs-12">
                      <section id="main">
                         <section id="content" class="page-home">
-                           <div class="pos_bestsellers_product  product_block_container" 
-                              data-items="5" 
-                              data-speed="1000"
-                              data-autoplay="0"
-                              data-time="3000"
-                              data-arrow="1"
-                              data-pagination="0"
-                              data-move="1"
-                              data-pausehover="0"
-                              data-lg="4"
-                              data-md="3"
-                              data-sm="2"
-                              data-xs="2"
-                              data-xxs="1">
+                           <div class="pos_bestsellers_product  product_block_container">
                               <div class="pos_title">
                                  <h2>
                                     Best Sellers
@@ -113,10 +100,9 @@
                                  </div>
                               </div>
                               <div class="row pos_content">
-                                 <div class="bestsellerSlide owl-carousel ">
-                                    <div class="item-product" data-ng-repeat="item in products.best_sellers">
-                                       <!-- style products default -->
-                                       <article class="style_product_default mediam-size-product product-miniature js-product-miniature item_in" data-id-product="8" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+                                 <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":1},768:{"items":2},992:{"items":5}}}'>
+                                    <div owl-carousel-item="" data-ng-repeat="item in products.best_sellers" class="item">
+                                      <article class="style_product_default product-miniature js-product-miniature item_in" >
                                           <div class="img_block">
                                              <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
                                              <img class="first-image "
@@ -156,59 +142,11 @@
                                                    <span class="sr-only">Price</span>
                                                    <span itemprop="price" class="price ">{{item.price}}</span>
                                                 </div>
-                                                <ul class="add-to-links">
-                                                   <li class="cart">
-                                                      <div class="product-add-to-cart">
-                                                         <form action="cart" method="post" class="add-to-cart-or-refresh">
-                                                            <input type="hidden" name="token" value="203b2fb46b107eabda9dd64ae8ebc173">
-                                                            <input type="hidden" name="id_product" value="8" class="product_page_product_id">
-                                                            <input type="hidden" name="qty" value="1">
-                                                            <button class="button ajax_add_to_cart_button add-to-cart btn-default" data-button-action="add-to-cart" type="submit" >
-                                                            <i class="fa fa-shopping-cart"></i> Add to cart
-                                                            </button>
-                                                         </form>
-                                                      </div>
-                                                   </li>
-                                                   <li>
-                                                      <a class="addToWishlist wishlistProd_8" title="Add to wishlist" href="#" data-rel="8" onclick="WishlistCart('wishlist_block_list', 'add', '8', false, 1); return false;">
-                                                      Add to wishlist
-                                                      </a>
-                                                   </li>
-                                                   <li class="compare">	
-                                                      <a href="#" class="poscompare-add compare-button js-poscompare-add"  data-id_product="8"   onclick="posCompare.addCompare($(this),8); return false;" title="Add to compare"><span>Add to compare</span></a>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                             <div class="availability">
-                                                <div class="availability-list in-stock">Availability: <span>300 In Stock</span></div>
-                                             </div>
-                                             <div class="product-desc" itemprop="description">
-                                                <ul>
-                                                   <li>
-                                                      <div>Stay ready for a change in weather with the IZOD® Water and Wind Resistant Insulated Jacket.</div>
-                                                   </li>
-                                                   <li>
-                                                      <div>Water-resistant jacket keeps you warm and dry.</div>
-                                                   </li>
-                                                   <li>
-                                                      <div>Stand collar features an attached hood.</div>
-                                                   </li>
-                                                   <li>
-                                                      <div>Front-zip closure.</div>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                             <div class="variant-links">
                                              </div>
                                           </div>
                                        </article>
-                                       <!-- end style products default --> 
-                                       <!-- style products default type 1 -->
-                                       <!-- end style products default type 3 -->						
                                     </div>
-                                    
-                                    
-                                 </div>
+                                 </data-owl-carousel>
                               </div>
                            </div>
                            <div class="home-banner">
@@ -534,116 +472,53 @@
                      </div>
                   </div>
                   <div class="row pos_content">
-                     <div class="newSlide owl-carousel ">
-                        <div class="item-product" data-ng-repeat="item in products.new_arrivals">
-                           <!-- style products default -->
-                           <article class="style_product_default mediam-size-product product-miniature js-product-miniature item_in" data-id-product="17" data-id-product-attribute="109" itemscope itemtype="http://schema.org/Product">
-                              <div class="img_block">
-                                 <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
-                                 <img class="first-image "
-                                    src="assets/img/{{item.product_image}}" 
-                                    data-full-size-image-url = "assets/img/{{item.product_image}}"
-                                    >
-                                 </a>
-                                 <div class="quick-view">
-                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view">
-                                    <span>Quick view</span>
-                                    </a>
-                                 </div>
-                                 <ul class="product-flag">
-                                    <li class="discount"><span>-10%</span></li>
-                                    <li class="new"><span>New</span></li>
-                                 </ul>
-                              </div>
-                              <div class="product_desc">
-                                 <div class="inner_desc">
-                                    <div class="manufacturer"><a ui-sref="ProductView({id:item.product_id})">{{item.name}}</a></div>
-                                    <h3 itemprop="name"><a ui-sref="ProductView({id:item.product_id})" class="product_name one_line" title="Originals Kaval Windbreaker Winter Jacket 2">{{item.description}}</a></h3>
-                                    <div class="hook-reviews">
-                                       <div class="comments_note" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                                          <div class="star_content clearfix">
-                                             <div class="star star_on"></div>
-                                             <div class="star star_on"></div>
-                                             <div class="star star_on"></div>
-                                             <div class="star star_on"></div>
-                                             <div class="star star_on"></div>
-                                             <meta itemprop="worstRating" content = "0" />
-                                             <meta itemprop="ratingValue" content = "5" />
-                                             <meta itemprop="bestRating" content = "5" />
+                     <data-owl-carousel data-owl-items="6" class="owl-carousel" data-options="{navigation: true, pagination: false, rewindNav : false,items:6}">
+                        <div owl-carousel-item="" data-ng-repeat="item in products.new_arrivals" class="item">
+                          <article class="style_product_default product-miniature js-product-miniature item_in" data-id-product="8" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+                                    <div class="img_block">
+                                       <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
+                                       <img class="first-image "
+                                          src="assets/img/{{item.product_image}}" 
+                                          data-full-size-image-url = "assets/img/{{item.product_image}}"
+                                          >
+                                       </a>
+                                       <div class="quick-view">
+                                          <a class="quick_view" href="" data-link-action="quickview" title="Quick view">
+                                          <span>Quick view</span>
+                                          </a>
+                                       </div>
+                                       <ul class="product-flag">
+                                          <li class="new"><span>New</span></li>
+                                       </ul>
+                                    </div>
+                                    <div class="product_desc">
+                                       <div class="inner_desc">
+                                          <div class="manufacturer"><a ui-sref="ProductView({id:item.product_id})">{{item.name}}</a></div>
+                                          <h3 itemprop="name"><a ui-sref="ProductView({id:item.product_id})" class="product_name one_line" title="Water and Wind Resistant Insulated Jacket">{{item.description}}</a></h3>
+                                          <div class="hook-reviews">
+                                             <div class="comments_note" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                                                <div class="star_content clearfix">
+                                                   <div class="star star_on"></div>
+                                                   <div class="star star_on"></div>
+                                                   <div class="star star_on"></div>
+                                                   <div class="star star_on"></div>
+                                                   <div class="star"></div>
+                                                   <meta itemprop="worstRating" content = "0" />
+                                                   <meta itemprop="ratingValue" content = "4" />
+                                                   <meta itemprop="bestRating" content = "5" />
+                                                </div>
+                                                <span class="nb-comments"><span itemprop="reviewCount">1</span> Review(s)</span>
+                                             </div>
                                           </div>
-                                          <span class="nb-comments"><span itemprop="reviewCount">1</span> Review(s)</span>
+                                          <div class="product-price-and-shipping">
+                                             <span class="sr-only">Price</span>
+                                             <span itemprop="price" class="price ">{{item.price}}</span>
+                                          </div>
                                        </div>
                                     </div>
-                                    <div class="product-price-and-shipping">
-                                       <span class="sr-only">Regular price</span>
-                                       <span class="regular-price">₹23.90</span>
-                                       <span class="sr-only">Price</span>
-                                       <span itemprop="price" class="price price-sale">₹21.51</span>
-                                       <span class="discount-percentage discount-product">-10%</span>
-                                    </div>
-                                    <ul class="add-to-links">
-                                       <li class="cart">
-                                          <div class="product-add-to-cart">
-                                             <form action="cart" method="post" class="add-to-cart-or-refresh">
-                                                <input type="hidden" name="token" value="203b2fb46b107eabda9dd64ae8ebc173">
-                                                <input type="hidden" name="id_product" value="17" class="product_page_product_id">
-                                                <input type="hidden" name="qty" value="1">
-                                                <button class="button ajax_add_to_cart_button add-to-cart btn-default" data-button-action="add-to-cart" type="submit" >
-                                                <i class="fa fa-shopping-cart"></i> Add to cart
-                                                </button>
-                                             </form>
-                                          </div>
-                                       </li>
-                                       <li>
-                                          <a class="addToWishlist wishlistProd_17" title="Add to wishlist" href="#" data-rel="17" onclick="WishlistCart('wishlist_block_list', 'add', '17', false, 1); return false;">
-                                          Add to wishlist
-                                          </a>
-                                       </li>
-                                       <li class="compare">	
-                                          <a href="#" class="poscompare-add compare-button js-poscompare-add"  data-id_product="17"   onclick="posCompare.addCompare($(this),17); return false;" title="Add to compare"><span>Add to compare</span></a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                                 <div class="availability">
-                                    <div class="availability-list in-stock">Availability: <span>200 In Stock</span></div>
-                                 </div>
-                                 <div class="product-desc" itemprop="description">
-                                    <ul>
-                                       <li>
-                                          <div>Block out the haters with the fresh adidas® Originals Kaval Windbreaker Jacket.</div>
-                                       </li>
-                                       <li>
-                                          <div><em>Part of the Kaval Collection.</em></div>
-                                       </li>
-                                       <li>
-                                          <div>Regular fit is eased, but not sloppy, and perfect for any activity.</div>
-                                       </li>
-                                       <li>
-                                          <div>Plain-woven jacket specifically constructed for freedom of movement.</div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                                 <div class="variant-links">
-                                    <div class="variant-links">
-                                       <a href="beauty-health/17-103-originals-kaval-windbreaker-winter-jacket-2.html#/2-size-m/8-color-white"
-                                          class="color"
-                                          title="White"
-                                          style="background-color: #ffffff"           ><span class="sr-only">White</span></a>
-                                       <a href="beauty-health/17-102-originals-kaval-windbreaker-winter-jacket-2.html#/1-size-s/11-color-black"
-                                          class="color"
-                                          title="Black"
-                                          style="background-color: #434A54"           ><span class="sr-only">Black</span></a>
-                                       <span class="js-count count"></span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </article>
-                           <!-- end style products default --> 
-                           <!-- style products default type 1 -->
-                           <!-- end style products default type 3 -->						
+                                 </article>
                         </div>
-                        
-                     </div>
+                     </data-owl-carousel>
                   </div>
                </div>
                <div class="home-banner">
