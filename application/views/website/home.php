@@ -1,108 +1,34 @@
-
-         <div class=" pos_bannerslide">
-            <div class="slideshow_container" data-speed="600" data-time="6000000" data-nav="false" data-pag="true" data-pausehover="hover">
-               <div class="pos-slideshow">
-                  <div class="flexslider ma-nivoslider">
-                     <div class="pos-loading"><span></span><img src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/modules/posslideshows/images/6639812e7c57490b96d3117cf8d6991421a0fbd6_1_3.jpg" alt="" /></div>
-                     <div id="pos-slideshow-home" class="slides">
-                        <a href="" title="slide show1" ><img style="display:none" src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/modules/posslideshows/images/6639812e7c57490b96d3117cf8d6991421a0fbd6_1_3.jpg"  data-thumb="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/modules/posslideshows/images/6639812e7c57490b96d3117cf8d6991421a0fbd6_1_3.jpg"  alt="" title="#htmlcaption5"  /> </a>
-                        <a href="" title="slide show2" ><img style="display:none" src="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/modules/posslideshows/images/fa49460cb34e07f9611f4af6f495aab307107fc9_2_3.jpg"  data-thumb="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/modules/posslideshows/images/fa49460cb34e07f9611f4af6f495aab307107fc9_2_3.jpg"  alt="" title="#htmlcaption6"  /> </a>
-                     </div>
-                     <div id="htmlcaption5" class="pos-slideshow-caption nivo-html-caption nivo-caption">
-                        <div class="timethai" style=" 
-                           position:absolute;
-                           top:0;
-                           left:0;
-                           z-index:8;
-                           background-color: rgba(49, 56, 72, 0.298);
-                           height:5px;
-                           -webkit-animation: myfirst 6000000ms ease-in-out;
-                           -moz-animation: myfirst 6000000ms ease-in-out;
-                           -ms-animation: myfirst 6000000ms ease-in-out;
-                           animation: myfirst 6000000ms ease-in-out;
-                           ">
-                        </div>
-                        <div class="banner7-des">
-                           <div class="container">
-                              <div class="desc_slideshow desc_slideshow_0 position_left">
-                                 <div class="info">
-                                    <h5 data-animation="animated fadeInDown " class="transition_slide_0">iconic Makeup collections</h5>
-                                    <h2 data-animation="animated fadeInLeft " class="transition_slide_1">Makeup Which Enhance</h2>
-                                    <h2 data-animation="animated fadeInRight " class="transition_slide_2">Your Natural Beauty</h2>
-                                    <a href="" data-animation="animated zoomIn" class="readmore transition_slide_3">Shop Now</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="htmlcaption6" class="pos-slideshow-caption nivo-html-caption nivo-caption">
-                        <div class="timethai" style=" 
-                           position:absolute;
-                           top:0;
-                           left:0;
-                           z-index:8;
-                           background-color: rgba(49, 56, 72, 0.298);
-                           height:5px;
-                           -webkit-animation: myfirst 6000000ms ease-in-out;
-                           -moz-animation: myfirst 6000000ms ease-in-out;
-                           -ms-animation: myfirst 6000000ms ease-in-out;
-                           animation: myfirst 6000000ms ease-in-out;
-                           ">
-                        </div>
-                        <div class="banner7-des">
-                           <div class="container">
-                              <div class="desc_slideshow desc_slideshow_1 position_left">
-                                 <div class="info">
-                                    <h5 data-animation="animated fadeInRight " class="transition_slide_0">Anti-Agring Wrinkle Cream</h5>
-                                    <h2 data-animation="animated fadeInUp " class="transition_slide_1">Collagen Renewal For</h2>
-                                    <h2 data-animation="animated fadeInLeft " class="transition_slide_2">Ageless Skin</h2>
-                                    <a href="" data-animation="animated zoomIn" class="readmore transition_slide_3">Shop Now</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div> 
-         </div>
-         <div>
+         <div class="home-banner">
              <!-- Full Page Image Background Carousel Header -->
               <div id="myCarousel" class="carousel slide">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
 
                     <!-- Wrapper for Slides -->
-                    <div class="carousel-inner">
+                    <div class="carousel-inner banner-inner">
                         <div class="item active">
                             <!-- Set the first background image using inline CSS below. -->
-                            <div class="fill" style="background-image:url('http://www.marchettidesign.net/demo/optimized-bootstrap/code.jpg');"></div>
+                            <div class="fill" style="background-image:url('../waljon/assets/img/6639812e7c57490b96d3117cf8d6991421a0fbd6_1_3.jpg');"></div>
                             <div class="carousel-caption">
-                                 <h2 class="animated fadeInLeft">Caption Animation</h2>
-                                 <p class="animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                                 <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
+                                 <div class="info">                                               
+                                    <h5 data-animation="animated fadeInDown " class="transition_slide_0">iconic Makeup collections</h5>   
+                                    <h2 data-animation="animated fadeInLeft " class="transition_slide_1">Makeup Which Enhance Your Natural Beauty</h2>
+                                    <a href="http://www.posthemes.com" data-animation="animated zoomIn" class="readmore transition_slide_3">Shop Now</a>
+                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <!-- Set the second background image using inline CSS below. -->
-                            <div class="fill" style="background-image:url('http://www.marchettidesign.net/demo/optimized-bootstrap/conference.jpg');"></div>
+                            <div class="fill" style="background-image:url('../waljon/assets/img/banner_2.jpg');"></div>
                             <div class="carousel-caption">
-                                 <h2 class="animated fadeInDown">Caption Animation</h2>
-                                 <p class="animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                                 <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <!-- Set the third background image using inline CSS below. -->
-                            <div class="fill" style="background-image:url('http://www.marchettidesign.net/demo/optimized-bootstrap/campus.jpg');"></div>
-                            <div class="carousel-caption">
-                                 <h2 class="animated fadeInRight">Caption Animation</h2>
-                                 <p class="animated fadeInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                                 <p class="animated fadeInRight"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
+                                 <div class="info">                                  
+                                    <h5 data-animation="animated fadeInRight " class="transition_slide_0 animated fadeInRight">Anti-Agring Wrinkle Cream</h5>                                
+                                    <h2 data-animation="animated fadeInUp " class="transition_slide_1 animated fadeInUp">Collagen Renewal For Ageless Skin</h2>
+                                    <a href="http://www.posthemes.com" data-animation="animated zoomIn" class="readmore transition_slide_3 animated zoomIn">Shop Now</a>
+                                 </div>
                             </div>
                         </div>
                     </div>
