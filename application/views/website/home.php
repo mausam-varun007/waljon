@@ -66,7 +66,7 @@
             </div>
             
          </div>
-         <div id="wrapper">
+         <div id="wrapper"  class="home_page_sec">
             <div class="container">
                <div class="row">
                   <div id="content-wrapper" class="col-xs-12">
@@ -79,21 +79,16 @@
                               <div class="desc_title">
                                  Add bestselling products to weekly line up 
                               </div>
-                           </div>
-                           <div class="row pos_content">
-                              <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":1},768:{"items":2},992:{"items":5}}}'>
-                                 <div owl-carousel-item="" data-ng-repeat="item in products.best_sellers" class="item">
-                                   <article class="style_product_default product-miniature js-product-miniature item_in" >
-                                       <div class="img_block">
-                                          <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
-                                          <img class="first-image "
-                                             src="assets/img/{{item.product_image}}" 
-                                             data-full-size-image-url = "assets/img/{{item.product_image}}"
-                                             >
-                                          </a>
-                                          <div class="quick-view">
-                                             <a class="quick_view" href="" data-link-action="quickview" title="Quick view">
-                                             <span>Quick view</span>
+                              <div class="row pos_content">
+                                 <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":1},768:{"items":2},992:{"items":5}}}'>
+                                    <div owl-carousel-item="" data-ng-repeat="item in products.best_sellers" class="item">
+                                      <article class="style_product_default product-miniature mediam-size-product js-product-miniature item_in" >
+                                          <div class="img_block">
+                                             <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
+                                             <img class="first-image "
+                                                src="assets/img/{{item.product_image}}" 
+                                                data-full-size-image-url = "assets/img/{{item.product_image}}"
+                                                >
                                              </a>
                                           </div>
                                           <ul class="product-flag">
@@ -397,38 +392,45 @@
                   <div class="row pos_content">
                      <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":1},768:{"items":2},992:{"items":6}}}'>
                         <div owl-carousel-item="" data-ng-repeat="item in products.new_arrivals" class="item">
-                          <article class="style_product_default product-miniature js-product-miniature item_in">
-                              <div class="img_block">
-                                 <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
-                                 <img class="first-image "
-                                    src="assets/img/{{item.product_image}}" 
-                                    data-full-size-image-url = "assets/img/{{item.product_image}}"
-                                    >
-                                 </a>
-                                 <div class="quick-view">
-                                    <a class="quick_view" href="" data-link-action="quickview" title="Quick view">
-                                    <span>Quick view</span>
-                                    </a>
-                                 </div>
-                                 <ul class="product-flag">
-                                    <li class="new"><span>New</span></li>
-                                 </ul>
-                              </div>
-                              <div class="product_desc">
-                                 <div class="inner_desc">
-                                    <div class="manufacturer"><a ui-sref="ProductView({id:item.product_id})">{{item.name}}</a></div>
-                                    <h3 itemprop="name"><a ui-sref="ProductView({id:item.product_id})" class="product_name one_line" title="Water and Wind Resistant Insulated Jacket">{{item.description}}</a></h3>
-                                    <div class="hook-reviews">
-                                       <div class="comments_note" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-                                          <div class="star_content clearfix">
-                                             <div class="star star_on"></div>
-                                             <div class="star star_on"></div>
-                                             <div class="star star_on"></div>
-                                             <div class="star star_on"></div>
-                                             <div class="star"></div>
-                                             <meta itemprop="worstRating" content = "0" />
-                                             <meta itemprop="ratingValue" content = "4" />
-                                             <meta itemprop="bestRating" content = "5" />
+                          <article class="style_product_default product-miniature mediam-size-product js-product-miniature item_in" data-id-product="8" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+                                    <div class="img_block">
+                                       <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
+                                       <img class="first-image "
+                                          src="assets/img/{{item.product_image}}" 
+                                          data-full-size-image-url = "assets/img/{{item.product_image}}"
+                                          >
+                                       </a>
+                                       <div class="quick-view">
+                                          <a class="quick_view" href="" data-link-action="quickview" title="Quick view">
+                                          <span>Quick view</span>
+                                          </a>
+                                       </div>
+                                       <ul class="product-flag">
+                                          <li class="new"><span>New</span></li>
+                                       </ul>
+                                    </div>
+                                    <div class="product_desc">
+                                       <div class="inner_desc">
+                                          <div class="manufacturer"><a ui-sref="ProductView({id:item.product_id})">{{item.name}}</a></div>
+                                          <h3 itemprop="name"><a ui-sref="ProductView({id:item.product_id})" class="product_name one_line" title="Water and Wind Resistant Insulated Jacket">{{item.description}}</a></h3>
+                                          <div class="hook-reviews">
+                                             <div class="comments_note" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                                                <div class="star_content clearfix">
+                                                   <div class="star star_on"></div>
+                                                   <div class="star star_on"></div>
+                                                   <div class="star star_on"></div>
+                                                   <div class="star star_on"></div>
+                                                   <div class="star"></div>
+                                                   <meta itemprop="worstRating" content = "0" />
+                                                   <meta itemprop="ratingValue" content = "4" />
+                                                   <meta itemprop="bestRating" content = "5" />
+                                                </div>
+                                                <span class="nb-comments"><span itemprop="reviewCount">1</span> Review(s)</span>
+                                             </div>
+                                          </div>
+                                          <div class="product-price-and-shipping">
+                                             <span class="sr-only">Price</span>
+                                             <span itemprop="price" class="price ">{{item.price}}</span>
                                           </div>
                                           <span class="nb-comments"><span itemprop="reviewCount">1</span> Review(s)</span>
                                        </div>

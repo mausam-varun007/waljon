@@ -53,6 +53,12 @@ class Home extends CI_Controller {
 					$this->load->view('website/product-list');
 					$this->load->view('website/footer');
           break;
+    case 'verification': 
+    			$this->load->view('website/header');
+					$this->load->view('website/verification');
+					$this->load->view('website/footer');
+          break;      
+          
     }  
 	}
 
