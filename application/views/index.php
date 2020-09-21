@@ -27,6 +27,10 @@
       <link rel="stylesheet" href="<?php echo base_url('assets/css/style2.css');?>" type="text/css" media="all">
       <!-- <link rel="stylesheet" href="<?php echo base_url('assets/css/themeStyle.css');?>" type="text/css" media="all"> -->
       <link rel="stylesheet" href="<?php echo base_url()?>assets/css/angular-toastr.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>   
       <script type="text/javascript">
         var Base_url = "<?=base_url()?>index.php/";   
      </script>
