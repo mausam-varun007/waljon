@@ -164,6 +164,10 @@ app.config(function($stateProvider, $locationProvider,
             url : '/products/:id', 
             templateUrl : Base_url+'view/products',  
             controller : "AllProdcutCtrl"
+        })
+        .state('Verification', { 
+            url : '/verification', 
+            templateUrl : Base_url+'view/verification'
         });
   
     // Redirect to home page if url does not  

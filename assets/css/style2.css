@@ -337,6 +337,24 @@ footer.form-footer.clearfix {
 .home_page_sec{
 	padding-top: 0px !important;
 }
+.mobile-page{
+	text-align: center;
+}
+.mobile-page header h1{
+	text-align: center;
+}
+.mobile-input {
+    width: 500px;
+    margin: 50px auto 80px;
+}
+.verify-input{
+	width: 250px;
+    margin: 50px auto;
+}
+.verify-input input{
+	text-align: center;
+    letter-spacing: 8px;
+}
 @media screen and (max-width: 991px){
 	.pos_bannerslide {
     margin-top: 0px !important;
