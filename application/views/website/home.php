@@ -79,16 +79,21 @@
                               <div class="desc_title">
                                  Add bestselling products to weekly line up 
                               </div>
-                              <div class="row pos_content">
-                                 <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":1},768:{"items":2},992:{"items":5}}}'>
-                                    <div owl-carousel-item="" data-ng-repeat="item in products.best_sellers" class="item">
-                                      <article class="style_product_default product-miniature mediam-size-product js-product-miniature item_in" >
-                                          <div class="img_block">
-                                             <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
+                           </div>
+                           <div class="row pos_content">
+                              <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":1},768:{"items":2},992:{"items":5}}}'>
+                                 <div owl-carousel-item="" data-ng-repeat="item in products.best_sellers" class="item">
+                                   <article class="style_product_default product-miniature mediam-size-product js-product-miniature item_in" >
+                                       <div class="img_block">
+                                          <a ui-sref="ProductView({id:item.product_id})" class="thumbnail product-thumbnail">
                                              <img class="first-image "
-                                                src="assets/img/{{item.product_image}}" 
-                                                data-full-size-image-url = "assets/img/{{item.product_image}}"
-                                                >
+                                             src="assets/img/{{item.product_image}}" 
+                                             data-full-size-image-url = "assets/img/{{item.product_image}}"
+                                             >
+                                          </a>
+                                          <div class="quick-view">
+                                             <a class="quick_view" href="" data-link-action="quickview" title="Quick view">
+                                             <span>Quick view</span>
                                              </a>
                                           </div>
                                           <ul class="product-flag">
@@ -200,7 +205,7 @@
                                                    Add to wishlist
                                                    </a>
                                                 </li>
-                                                <li class="compare">	
+                                                <li class="compare"> 
                                                    <a href="#" class="poscompare-add compare-button js-poscompare-add"  data-id_product="17"   onclick="posCompare.addCompare($(this),17); return false;" title="Add to compare"><span>Add to compare</span></a>
                                                 </li>
                                              </ul>
@@ -287,7 +292,7 @@
                               Featured products 
                            </h2>
                            <div class="desc_title">
-                              Add featured products to weekly line up	
+                              Add featured products to weekly line up   
                            </div>
                         </div>
                         <div class="pos_content row">
@@ -434,10 +439,6 @@
                                           </div>
                                           <span class="nb-comments"><span itemprop="reviewCount">1</span> Review(s)</span>
                                        </div>
-                                    </div>
-                                    <div class="product-price-and-shipping">
-                                       <span class="sr-only">Price</span>
-                                       <span itemprop="price" class="price ">{{item.price}}</span>
                                     </div>
                                  </div>
                               </div>
