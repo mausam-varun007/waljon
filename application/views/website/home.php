@@ -58,7 +58,7 @@
                               </div>
                            </div>
                            <div class="row pos_content">
-                              <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":1},768:{"items":2},992:{"items":5}}}'>
+                              <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":2},768:{"items":4},992:{"items":5}}}'>
                                  <div owl-carousel-item="" data-ng-repeat="item in products.best_sellers" class="item">
                                    <article class="style_product_default product-miniature mediam-size-product js-product-miniature item_in" >
                                        <div class="img_block">
@@ -372,7 +372,7 @@
                      </div>
                   </div>
                   <div class="row pos_content">
-                     <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":1},768:{"items":2},992:{"items":6}}}'>
+                     <data-owl-carousel class="owl-carousel" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":2},768:{"items":4},992:{"items":6}}}'>
                         <div owl-carousel-item="" data-ng-repeat="item in products.new_arrivals" class="item">
                           <article class="style_product_default product-miniature mediam-size-product js-product-miniature item_in" data-id-product="8" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
                                     <div class="img_block">

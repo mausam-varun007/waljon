@@ -484,6 +484,39 @@ footer.form-footer.clearfix {
 	.pos-sub-inner.header-md{
 		display: none;
 	}
+	.carousel .carousel-inner.banner-inner {
+	    height: 185px;
+	}
+	.carousel .carousel-inner.banner-inner .carousel-caption {
+	    left: 15px;
+	    text-align: left;
+	    top: 0px;
+	}
+	.carousel .carousel-inner.banner-inner .carousel-caption .info h2 {
+	    font-size: 14px;
+	    font-weight: 550;
+	    margin-top: 8px;
+	}
+	.carousel .carousel-inner.banner-inner .carousel-caption .info h5 {
+	    font-size: 12px;
+	    margin-bottom: 0px;
+	}
+	.carousel .carousel-inner.banner-inner .carousel-caption .info .readmore {
+	    text-decoration: none;
+	    margin-top: 20px;
+	    font-size: 14px;
+	    height: 2.3449713392vw;
+	    line-height: 2.3449713392vw;
+	    padding: 3px 10px 5px;
+	    border-radius: 20px;
+	    color: #253237;
+	    background: #fff;
+	}
+	.carousel .carousel-inner.banner-inner .carousel-caption .info {
+	    display: inline-block;
+	    max-width: 55%;
+	    text-align: center;
+	}
 }
 @media screen and (max-width: 991px){
 	.pos_bannerslide {
