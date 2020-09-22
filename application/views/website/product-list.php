@@ -632,7 +632,7 @@
                                                 </div>
                                                 <div class="product-price-and-shipping">
                                                    <span class="sr-only">Price</span>
-                                                   <span itemprop="price" class="price ">${{item.price}}</span>
+                                                   <span itemprop="price" class="price "><i class="fa fa-rupee"></i>{{item.price}}</span>
                                                 </div>
                                                 <ul class="add-to-links">
                                                    <li class="cart">

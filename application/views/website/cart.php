@@ -27,8 +27,8 @@
                             </div>
 
                             <div class="product-line-info product-price-and-shipping product-price h5 has-discount">
-                        	    <span class="price">$10.12</span>
-                              <span class="regular-price">$11.90</span>
+                        	    <span class="price"><i class="fa fa-rupee"></i>10.12</span>
+                              <span class="regular-price"><i class="fa fa-rupee"></i>11.90</span>
                               <span class="discount discount-percentage">-15%</span>   
                             </div>
                             <br/>
@@ -55,7 +55,7 @@
                                   <div class="col-md-6 col-xs-2 price">
                                     <span class="product-price">
                                       <strong>
-                                                          $10.12
+                                                          <i class="fa fa-rupee"></i>10.12
                                                       </strong>
                                     </span>
                                   </div>
@@ -101,7 +101,7 @@
                               <a class="product_name" href="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/en/beauty-health/3-13-brixton-patrol-all-terrain-anorak-jacket.html#/19-dimension-40x60cm" data-id_customization="0">Brixton Patrol All Terrain Anorak Jacket</a>
                             </div>
                             <div class="product-line-info product-price-and-shipping product-price h5 ">
-                        	     <span class="price">$29.00</span>         
+                        	     <span class="price"><i class="fa fa-rupee"></i>29.00</span>         
                             </div>
                             <br/>
                             <div class="product-line-info">
@@ -131,7 +131,7 @@
                                   <div class="col-md-6 col-xs-2 price">
                                     <span class="product-price">
                                       <strong>
-                                                          $29.00
+                                        <i class="fa fa-rupee"></i>29.00
                                                       </strong>
                                     </span>
                                   </div>

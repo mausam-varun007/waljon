@@ -98,7 +98,7 @@
                                              </div>
                                              <div class="product-price-and-shipping">
                                                 <span class="sr-only">Price</span>
-                                                <span itemprop="price" class="price ">{{item.price}}</span>
+                                                <span itemprop="price" class="price "><i class="fa fa-rupee"></i> {{item.price}}</span>
                                              </div>
                                           </div>
                                        </div>
@@ -412,7 +412,7 @@
                                           </div>
                                           <div class="product-price-and-shipping">
                                              <span class="sr-only">Price</span>
-                                             <span itemprop="price" class="price ">{{item.price}}</span>
+                                             <span itemprop="price" class="price "> <i class="fa fa-rupee"></i> {{item.price}}</span>
                                           </div>
                                           <span class="nb-comments"><span itemprop="reviewCount">1</span> Review(s)</span>
                                        </div>
@@ -486,57 +486,40 @@
             <div class="container">
                <div class="pos_logo product_block_container">
                   <div class="row pos_content">
-                     <div class="logo-slider owl-carousel">
-                        <div>
-                           <div class="item-banklogo">
+                     <data-owl-carousel class="logo-slider owl-carousel owl-loaded owl-drag" data-options='{navigation: false, pagination: false, rewindNav : false,dots:false,"responsive": {0:{"items":1},768:{"items":2},992:{"items":5}}}'>
+                        <div class="logo-slider-inner">
+                           <div owl-carousel-item="" class="item item-banklogo">
                               <a href ="">
-                              <img class="replace-2x img-responsive" src ="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/img/blocklogo/1.jpg" alt ="Logo" />
+                                 <img class="replace-2x img-responsive" src ="<?php echo base_url() ?>assets/img/1.jpg" alt ="Logo" />
                               </a>
                            </div>
-                        </div>
-                        <div>
-                           <div class="item-banklogo">
+                           <div owl-carousel-item="" class="item item-banklogo">
                               <a href ="">
-                              <img class="replace-2x img-responsive" src ="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/img/blocklogo/2.jpg" alt ="Logo" />
+                                 <img class="replace-2x img-responsive" src ="<?php echo base_url() ?>assets/img/2cm.jpg" alt ="Logo" />
                               </a>
                            </div>
-                        </div>
-                        <div>
-                           <div class="item-banklogo">
+                           <div owl-carousel-item="" class="item item-banklogo">
                               <a href ="">
-                              <img class="replace-2x img-responsive" src ="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/img/blocklogo/3.jpg" alt ="Logo" />
+                                 <img class="replace-2x img-responsive" src ="<?php echo base_url() ?>assets/img/3.jpg" alt ="Logo" />
                               </a>
                            </div>
-                        </div>
-                        <div>
-                           <div class="item-banklogo">
+                           <div owl-carousel-item="" class="item item-banklogo">
                               <a href ="">
-                              <img class="replace-2x img-responsive" src ="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/img/blocklogo/4.jpg" alt ="Logo" />
+                                 <img class="replace-2x img-responsive" src ="<?php echo base_url() ?>assets/img/4.jpg" alt ="Logo" />
                               </a>
                            </div>
-                        </div>
-                        <div>
-                           <div class="item-banklogo">
+                           <div owl-carousel-item="" class="item item-banklogo">
                               <a href ="">
-                              <img class="replace-2x img-responsive" src ="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/img/blocklogo/5.jpg" alt ="Logo" />
+                                 <img class="replace-2x img-responsive" src ="<?php echo base_url() ?>assets/img/5.jpg" alt ="Logo" />
                               </a>
                            </div>
-                        </div>
-                        <div>
-                           <div class="item-banklogo">
+                           <div owl-carousel-item="" class="item item-banklogo">
                               <a href ="">
-                              <img class="replace-2x img-responsive" src ="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/img/blocklogo/6.jpg" alt ="Logo" />
+                                 <img class="replace-2x img-responsive" src ="<?php echo base_url() ?>assets/img/6.jpg" alt ="Logo" />
                               </a>
                            </div>
-                        </div>
-                        <div>
-                           <div class="item-banklogo">
-                              <a href ="">
-                              <img class="replace-2x img-responsive" src ="http://demo.posthemes.com/pos_ecolife_cosmetic/cosmetic3/img/blocklogo/7.jpg" alt ="Logo" />
-                              </a>
-                           </div>
-                        </div>
-                     </div>
+                        </div>   
+                     </data-owl-carousel>
                   </div>
                </div>
             </div>

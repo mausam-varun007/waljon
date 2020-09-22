@@ -8,16 +8,16 @@
            <div id="_desktop_user_info">
               <div class="user-info-block selector-block">
                  <div class="currency-selector localiz_block dropdown js-dropdown">
-                    <button data-target="#" data-toggle="dropdown" class=" btn-unstyle hidden-md-down">
+                    <button data-toggle="dropdown" class=" btn-unstyle hidden-md-down">
                     <span class="expand-more">Setting</span>
                     <i class="material-icons">expand_more</i>
                     </button>
-                    <button data-target="#" data-toggle="dropdown" class=" btn-unstyle hidden-lg-up">
+                    <button data-toggle="dropdown" class=" btn-unstyle hidden-lg-up">
                     <i class="fa fa-user"></i>
                     </button>
                     <ul class="dropdown-menu">
                        <li>
-                          <a ui-sref="Login" rel="nofollow" class="dropdown-item"><i class="fa fa-sign-in" aria-hidden="true"></i> SignUp/SignIn</a>
+                          <a ui-sref="Login" rel="nofollow" class="dropdown-item"><i class="fa fa-sign-in" aria-hidden="true"></i> SignUp / SignIn</a>
                        </li>
                        <!-- <li>
                           <a

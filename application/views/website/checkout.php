@@ -428,7 +428,7 @@
                                 <span class="carrier-delay">Delivery next day!</span>
                               </div>
                               <div class="col-sm-3 col-xs-12">
-                                <span class="carrier-price">$7.00 tax excl.</span>
+                                <span class="carrier-price"><i class="fa fa-rupee"></i>7.00 tax excl.</span>
                               </div>
                             </div>
                           </label>
@@ -547,7 +547,7 @@
                         <div class="media-body">
                           <span class="product-name">Madden by Steve Madden Cale 6</span>
                           <span class="product-quantity">x1</span>
-                          <span class="product-price float-xs-right">$10.12</span>
+                          <span class="product-price float-xs-right"><i class="fa fa-rupee"></i>10.12</span>
                           <br/>
                         </div>
                       </li>
@@ -560,7 +560,7 @@
                         <div class="media-body">
                           <span class="product-name">Brixton Patrol All Terrain Anorak Jacket</span>
                           <span class="product-quantity">x1</span>
-                          <span class="product-price float-xs-right">$29.00</span>
+                          <span class="product-price float-xs-right"><i class="fa fa-rupee"></i>29.00</span>
                           <div class="product-line-info product-line-info-secondary text-muted">
                             <span class="label">Dimension:</span>
                             <span class="value">40x60cm</span>

@@ -462,6 +462,10 @@ footer.form-footer.clearfix {
     color: #253237;
     background: #fff;
 }
+.logo-slider-inner {
+    display: flex;
+    justify-content: space-between;
+}
 @media screen and (max-width: 991px){
 	.pos_bannerslide {
     margin-top: 0px !important;
